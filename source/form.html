@@ -33,6 +33,60 @@
       <h1 class="page-form__header">Оставьте свой отзыв</h1>
       <p class="page-form__decription">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
+      <section class="">
+          <h2 class="visually-hidden">Форма для отправки отзыва</h2>
+
+          <form class="page-form__form form" method="POST" action="https://echo.htmlacademy.ru">
+            <div class="form__user">
+              <hr>
+              <h3 class="form__header">Представьтесь:</h3>
+
+              <label class="form__label" for="id__user-name">Имя*:</label>
+              <input class="form__input-user" type="text" name="username" id="id__user-name" required>
+
+              <label class="form__label" for="id__user-surname">Фамилия*:</label>
+              <input class="form__input-user" type="text" name="surname" id="id__user-surname" required>
+
+              <label class="form__label" for="id__user-patronymic">Отчество:</label>
+              <input class="form__input-user" type="text" name="patronymic" id="id__user-patronymic">
+            </div>
+
+            <div class="form__contacts">
+              <hr>
+              <h3 class="form__header">Контактная информация:</h3>
+
+              <label class="form__label" for="id__user-telephone">Контактный телефон*:</label>
+              <input class="form__input-user form__input-user--telephone" type="tel" name="telephone" id="id__user-telephone" required>
+
+              <label class="form__label" for="id__user-email">Электронная почта*:</label>
+              <input class="form__input-user form__input-user--email" type="email" name="email" id="id__user-email"  required>
+            </div>
+
+            <div>
+              <hr>
+              <h3 class="form__header">Ваше общее впечатление:</h3>
+
+              <input class="form__checkbox" type="radio" name="impression" value="positive" id="id__user-positive" checked>
+              <label  class="form__label-flag" for="id__user-positive">Скорее положительное</label>
+
+              <input class="form__checkbox" type="radio" name="impression" value="negative" id="id__user-negative">
+              <label  class="form__label-flag" for="id__user-negative">Скорее отрицательное</label>
+
+              <input class="form__checkbox" type="radio" name="impression" value="difficult" id="id__user-difficult">
+              <label  class="form__label-flag" for="id__user-difficult">Затрудняюсь ответить</label>
+            </div>
+
+            <div>
+              <hr>
+              <h3 class="form__header">Посещенные достопримечательности:</h3>
+
+              <input class="form__checkbox" type="checkbox" name="sight" value="bridge" id="id__sight-bridge" checked>
+              <label  class="form__label-flag" for="id__sight-bridge">Скорее положительное</label>
+
+            </div>
+
+          </form>
+        </section>
 
     </main>
 
