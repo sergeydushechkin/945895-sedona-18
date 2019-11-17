@@ -1,0 +1,15 @@
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./mixins.scss";
+@import "./vars.scss";
+
+$color: lightblue;
+
+@mixin abc {
+  font-family: "PT Sans", "Arial", sans-serif;;
+}
+
+body {
+  @include abc;
+  background: $color;
+}
