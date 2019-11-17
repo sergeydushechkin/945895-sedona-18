@@ -1,15 +1,13 @@
 @import "./normalize.scss";
 @import "./fonts.scss";
-@import "./mixins.scss";
 @import "./vars.scss";
-
-$color: lightblue;
-
-@mixin abc {
-  font-family: "PT Sans", "Arial", sans-serif;;
-}
-
-body {
-  @include abc;
-  background: $color;
-}
+@import "./mixins.scss";
+@import "./global.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/menu-nav.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/interest.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/developers.scss";
