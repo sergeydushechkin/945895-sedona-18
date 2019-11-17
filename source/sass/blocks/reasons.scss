@@ -1,0 +1,24 @@
+.reasons__introduction {
+  @include fontprop(#333333, 14px, 26px);
+  text-align: center;
+}
+
+.reasons__list {
+  @include indents_null;
+  list-style: none;
+}
+
+.reasons__item {
+  background-color: $light-grey-blue;
+}
+
+.reasons__name {
+  @include fontprop(#333333, 18px, 26px);
+  text-align: center;
+}
+
+.reasons__number,
+.reasons__description {
+  @include fontprop(#ffffff, 14px, 21px);
+  text-align: center;
+}

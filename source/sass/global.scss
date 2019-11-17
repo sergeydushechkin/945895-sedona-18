@@ -17,8 +17,22 @@ input[type="radio"].visually-hidden,
   overflow: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.block {
+  box-sizing: content-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  @include indents_null;
   font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
 }
