@@ -1,0 +1,33 @@
+.main-nav__list {
+  @include indents_null;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.main-nav__link {
+  padding: 10px 0;
+  margin-bottom: 1px;
+  display: block;
+
+  @include fontprop(#ffffff, 18px, 40px);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: $light-grey-blue;
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.2) inset,
+    0 1px 0 0 rgba(1, 1, 1, 0.2);
+
+  &:hover,
+  &:focus {
+    background-color: $light-grey-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $light-grey-blue-active;
+  }
+}

@@ -1,0 +1,5 @@
+.page-main__header {
+  @include fontprop(#000000, 18px, 26px);
+  font-weight: bold;
+  text-align: center;
+}

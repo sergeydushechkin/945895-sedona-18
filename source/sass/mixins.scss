@@ -1,0 +1,10 @@
+@mixin indents_null {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin fontprop($fontcolor, $fontsize, $lineheight) {
+  color: $fontcolor;
+  font-size: $fontsize;
+  line-height: $lineheight;
+}

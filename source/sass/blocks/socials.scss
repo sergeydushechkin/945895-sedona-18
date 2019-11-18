@@ -1,0 +1,28 @@
+.socials__list {
+  font-size: 0;
+  display: flex;
+  list-style: none;
+}
+
+.socials__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+
+  margin-right: 6px;
+
+  background-color: $light-grey-blue;
+  background-repeat: no-repeat;
+
+  &--twitter {
+    background-image: url("./../../img/icon-twitter.svg");
+  }
+
+  &--facebook {
+    background-image: url("./../../img/icon-facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("./../../img/icon-youtube.svg");
+  }
+}

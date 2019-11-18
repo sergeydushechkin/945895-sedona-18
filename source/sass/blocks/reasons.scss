@@ -1,0 +1,54 @@
+.reasons__introduction {
+  @include fontprop(#333333, 14px, 26px);
+  text-align: center;
+}
+
+.reasons__list {
+  @include indents_null;
+  list-style: none;
+}
+
+.reasons__item {
+  background-color: $light-grey-blue;
+}
+
+.reasons__item--bggrey {
+  background-color: #eeeeee;
+}
+
+.reasons__name {
+  @include fontprop(#ffffff, 18px, 26px);
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.reasons__name--dark {
+  color: #000000;
+}
+
+.reasons__description {
+  @include fontprop(#ffffff, 14px, 21px);
+  margin: 0;
+  text-align: center;
+}
+
+.reasons__description--dark {
+  color: #333333;
+}
+
+.reason-one__list {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.reason-one__header {
+  @include fontprop(#000000, 18px, 26px);
+  margin: 0;
+  font-weight: bold;
+}
+
+.reason-one__description {
+  @include fontprop(#333333, 14px, 21px);
+  margin: 0;
+}
