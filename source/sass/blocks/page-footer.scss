@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: #fefefe;
+}
+
+.page-footer__hashtag {
+  @include fontprop(#000000, 21px, 26px);
+  font-weight: bold;
+  text-align: center;
+}

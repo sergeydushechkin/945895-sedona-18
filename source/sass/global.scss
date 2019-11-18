@@ -27,10 +27,6 @@ html {
   box-sizing: border-box;
 }
 
-.block {
-  box-sizing: content-box;
-}
-
 body {
   @include indents_null;
   font-family: "PT Sans", "Arial", sans-serif;
