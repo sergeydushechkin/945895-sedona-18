@@ -1,7 +1,15 @@
 .developers {
   @include fontprop(#000000, 14px, 26px);
+  vertical-align: middle;
 }
 
-.developers__logo {
-  vertical-align: middle;
+.developers__link {
+  &:hover .developers__logo,
+  &:focus .developers__logo {
+    fill: $light-grey-blue;
+  }
+
+  &:active .developers__logo {
+    opacity: 0.3;
+  }
 }
