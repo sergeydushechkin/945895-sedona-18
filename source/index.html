@@ -7,10 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
-      </a>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link">Главная</a>
@@ -25,9 +22,18 @@
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <button class="page-header__toggle">Открыть меню</button>
+        <div class="page-header__pane">
+          <a class="page-header__logo" href="">
+            <img src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
+          </a>
+          <button class="page-header__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
       </nav>
-      <img class="page-header__image" src="https://via.placeholder.com/150x150" alt="Изображение города Седона" width="150" height="150">
+      <div class="page-header__label">
+        <img class="page-header__image" src="./img/text-sedona-index.svg" alt="Изображение города Седона" width="280" height="280">
+      </div>
     </header>
 
     <main class="page-main">

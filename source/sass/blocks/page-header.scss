@@ -1,1 +1,70 @@
-/*123 */
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: calc(50% - 51px);
+  z-index: 1;
+}
+
+.page-header__pane {
+  position: relative;
+  height: 56px;
+}
+
+.page-header__toggle {
+  position: absolute;
+  box-sizing: content-box;
+
+  top: 20%;
+  right: 5%;
+  width: 23px;
+  height: 22px;
+
+  padding: 3px;
+
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $light-grey-blue;
+
+    box-shadow:
+      0 8px 0 0 $light-grey-blue,
+      0 -8px 0 0 $light-grey-blue;
+  }
+}
+
+.page-header__label {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  height: 389px;
+  background-image:
+    url("../../img/bg-intro-triangle-mobile.svg"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: repeat-x, no-repeat;
+  background-position: 50% 100%, 50% 50%;
+
+  &--alternate {
+    height: 150px;
+    background-position: 50% 100%, 50% 100%;
+  }
+}
+
+.page-header__image {
+  position: relative;
+  top: 55px;
+  left: 20px;
+}
+
+.page-header__image-alternate {
+
+  margin: auto auto;
+  top: 20px;
+}
