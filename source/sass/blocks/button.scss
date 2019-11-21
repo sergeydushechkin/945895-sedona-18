@@ -1,12 +1,13 @@
 .button {
-  display: inline-block;
+  display: block;
   padding: 10px 20px;
 
   @include fontprop(#ffffff, 21px, 26px);
   font-weight: bold;
-  background-color: $light-grey-blue;
   text-decoration: none;
   text-align: center;
+  background-color: $light-grey-blue;
+  border: none;
 
   &:hover,
   &:focus {
