@@ -26,6 +26,7 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -59,12 +60,11 @@
 
 .page-header__image {
   position: relative;
+  display: block;
   top: 55px;
-  left: 20px;
+  margin: 0 auto;
 }
 
-.page-header__image-alternate {
-
-  margin: auto auto;
-  top: 20px;
+.page-header__image--compact {
+  top: 45px;
 }
