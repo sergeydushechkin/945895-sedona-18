@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+
+  &--close {
+    display: none;
+  }
 }
 
 .menu-nav__item:first-child {
