@@ -21,15 +21,10 @@
 }
 
 .form__input {
-  height: 58px;
-  padding-left: 22px;
-
-  @include fontprop(#333333, 18px, 26px);
-  font-weight: bold;
-  text-transform: none;
-
-  border: none;
-  background-color: #f2f2f2;
+  &--email,
+  &--telephone {
+    padding-right: 80px;
+  }
 }
 
 .form__telephone,
@@ -87,23 +82,8 @@
   list-style: none;
 }
 
-.form__radio {
-  display: none;
-}
-
-.form__label-radio {
-  padding-left: 40px;
-
-  &::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 46px;
-    height: 46px;
-
-    background-color: #f2f2f2;
-    border-radius: 50%;
-  }
+.form__impression-item {
+  margin-bottom: 25px;
 }
 
 .form__sight {
@@ -116,6 +96,15 @@
   list-style: none;
 }
 
+.form__checkbox {
+  margin-bottom: 60px;
+}
+
 .form__emotions {
   border: none;
+}
+
+.form__emotions-text {
+  height: auto;
+  resize: none;
 }

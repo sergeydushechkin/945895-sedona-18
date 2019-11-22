@@ -6,4 +6,5 @@
 
 .page-form__description {
   @include fontprop(#333333, 14px, 24px);
+  text-align: center;
 }
