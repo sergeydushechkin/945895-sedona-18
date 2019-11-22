@@ -1,4 +1,4 @@
-.main-nav__list {
+.menu-nav__list {
   @include indents_null;
 
   display: flex;
@@ -6,7 +6,11 @@
   list-style: none;
 }
 
-.main-nav__link {
+.menu-nav__item:first-child {
+  position: relative;
+}
+
+.menu-nav__link {
   padding: 10px 0;
   margin-bottom: 1px;
   display: block;
@@ -29,5 +33,39 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: $light-grey-blue-active;
+  }
+}
+
+.menu-nav__close {
+  position: absolute;
+  box-sizing: content-box;
+
+  top: 10px;
+  right: 30px;
+  width: 28px;
+  height: 28px;
+
+  padding: 5px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 4px;
+    position: absolute;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
   }
 }

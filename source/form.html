@@ -7,19 +7,22 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+      <nav class="page-header__nav menu-nav">
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="index.html">Главная</a>
+            <button class="menu-nav__close">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Форма отзыва</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Форма отзыва</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
         <div class="page-header__pane">
@@ -49,15 +52,15 @@
               <ul class="form__user-list">
                 <li class="form__user-item">
                   <label class="form__label" for="id__user-name">Имя*:</label>
-                  <input class="form__input" type="text" name="username" id="id__user-name" placeholder="Петр" required>
+                  <input class="form__input custom-input" type="text" name="username" id="id__user-name" placeholder="Петр" required>
                 </li>
                 <li class="form__user-item">
                   <label class="form__label" for="id__user-surname">Фамилия*:</label>
-                  <input class="form__input" type="text" name="surname" id="id__user-surname" placeholder="Иванов" required>
+                  <input class="form__input custom-input" type="text" name="surname" id="id__user-surname" placeholder="Иванов" required>
                 </li>
                 <li class="form__user-item">
                   <label class="form__label" for="id__user-patronymic">Отчество:</label>
-                  <input class="form__input" type="text" name="patronymic" id="id__user-patronymic" placeholder="Александрович">
+                  <input class="form__input custom-input" type="text" name="patronymic" id="id__user-patronymic" placeholder="Александрович">
                 </li>
               </ul>
             </fieldset>
@@ -67,11 +70,15 @@
               <ul class="form__contacts-list">
                 <li class="form__contacts-item">
                   <label class="form__label" for="id__user-telephone">Контактный телефон*:</label>
-                  <span class="form__telephone"><input class="form__input form__input--telephone" type="tel" name="telephone" id="id__user-telephone" placeholder="Введите телефон" required></span>
+                  <span class="form__telephone">
+                    <input class="form__input form__input--telephone custom-input" type="tel" name="telephone" id="id__user-telephone" placeholder="Введите телефон" required>
+                  </span>
                 </li>
                 <li class="form__contacts-item">
                   <label class="form__label" for="id__user-email">Электронная почта*:</label>
-                  <span class="form__email"><input class="form__input form__input--email" type="email" name="email" id="id__user-email" placeholder="Введите e-mail" required></span>
+                  <span class="form__email">
+                    <input class="form__input form__input--email custom-input" type="email" name="email" id="id__user-email" placeholder="Введите e-mail" required>
+                  </span>
                 </li>
              </ul>
             </fieldset>
@@ -79,17 +86,17 @@
             <fieldset class="form__impression">
               <legend class="form__header">Ваше общее впечатление:</legend>
               <ul class="form__impression-list">
-                <li class="form__impression-item">
-                  <input class="form__radio" type="radio" name="impression" value="positive" id="id__user-positive" checked>
-                  <label  class="form__label-radio" for="id__user-positive">Скорее положительное</label>
+                <li class="form__impression-item custom-radio">
+                  <input class="form__radio custom-radio__control" type="radio" name="impression" value="positive" id="id__user-positive" checked>
+                  <label  class="form__label-radio custom-radio__label" for="id__user-positive">Скорее положительное</label>
                 </li>
-                <li class="form__impression-item">
-                  <input class="form__radio" type="radio" name="impression" value="negative" id="id__user-negative">
-                  <label  class="form__label-radio" for="id__user-negative">Скорее отрицательное</label>
+                <li class="form__impression-item custom-radio">
+                  <input class="form__radio custom-radio__control" type="radio" name="impression" value="negative" id="id__user-negative">
+                  <label  class="form__label-radio custom-radio__label" for="id__user-negative">Скорее отрицательное</label>
                 </li>
-                <li class="form__impression-item">
-                  <input class="form__radio" type="radio" name="impression" value="difficult" id="id__user-difficult">
-                  <label  class="form__label-radio" for="id__user-difficult">Затрудняюсь ответить</label>
+                <li class="form__impression-item custom-radio">
+                  <input class="form__radio custom-radio__control" type="radio" name="impression" value="difficult" id="id__user-difficult">
+                  <label  class="form__label-radio custom-radio__label" for="id__user-difficult">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
@@ -97,21 +104,21 @@
             <fieldset class="form__sight">
               <legend class="form__header">Посещенные достопримечательности:</legend>
               <ul class="form__sight-list">
-                <li class="form__sight-item">
-                  <input class="form__checkbox" type="checkbox" name="sight" value="bridge" id="id__sight-bridge" checked>
-                  <label  class="form__label-checkbox" for="id__sight-bridge">Мост дьявола</label>
+                <li class="form__sight-item custom-checkbox">
+                  <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="bridge" id="id__sight-bridge" checked>
+                  <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-bridge">Мост дьявола</label>
                 </li>
                 <li class="form__sight-item">
-                  <input class="form__checkbox" type="checkbox" name="sight" value="mountain" id="id__sight-mountain" checked>
-                  <label  class="form__label-checkbox" for="id__sight-mountain">Гора-Колокол</label>
+                  <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="mountain" id="id__sight-mountain" checked>
+                  <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-mountain">Гора-Колокол</label>
                 </li>
                 <li class="form__sight-item">
-                  <input class="form__checkbox" type="checkbox" name="sight" value="park" id="id__sight-park" checked>
-                  <label  class="form__label-checkbox" for="id__sight-park">Слайд-парк</label>
+                  <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="park" id="id__sight-park" checked>
+                  <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-park">Слайд-парк</label>
                 </li>
                 <li class="form__sight-item">
-                  <input class="form__checkbox" type="checkbox" name="sight" value="rocks" id="id__sight-rocks">
-                  <label  class="form__label-checkbox" for="id__sight-rocks">Красные скалы</label>
+                  <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="rocks" id="id__sight-rocks">
+                  <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-rocks">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
@@ -119,7 +126,7 @@
             <fieldset class="form__emotions">
               <legend class="visually-hidden">Эмоции</legend>
               <label class="form__header" for="id__emotions">Опишите свои эмоции:</label>
-              <textarea class="form__emotions-text" id="id__emotions" name="emotions" cols="50" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__emotions-text custom-input" id="id__emotions" name="emotions" cols="50" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
               <button class="form__submit button" type="submit">Отправить отзыв</button>
             </fieldset>
           </form>

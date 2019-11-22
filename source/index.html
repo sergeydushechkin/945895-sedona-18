@@ -7,26 +7,29 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
+      <nav class="page-header__nav menu-nav">
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Главная</a>
+            <button class="menu-nav__close">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
         <div class="page-header__pane">
           <a class="page-header__logo" href="">
             <img src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
           </a>
-          <button class="page-header__toggle">
+          <button class="page-header__toggle page-header__toggle--open">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
