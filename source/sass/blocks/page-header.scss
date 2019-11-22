@@ -17,10 +17,8 @@
   position: absolute;
   box-sizing: content-box;
 
-  top: 20%;
-  right: 5%;
-  width: 23px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
 
   padding: 3px;
 
@@ -28,16 +26,49 @@
   border: none;
   cursor: pointer;
 
+  &--open {
+    top: 20%;
+    right: 5%;
+  }
+
+  &--close {
+    top: -230px;
+    right: 5%;
+  }
+
   &::before {
     content: "";
     display: block;
-    width: 100%;
+    position: absolute;
+    width: 27px;
     height: 4px;
+  }
+
+  &--open::before {
     background-color: $light-grey-blue;
 
     box-shadow:
       0 8px 0 0 $light-grey-blue,
       0 -8px 0 0 $light-grey-blue;
+  }
+
+  &--close::before,
+  &--close::after {
+    background-color: #ffffff;
+  }
+
+  &--close::before {
+    transform: rotate(-45deg);
+  }
+
+  &--close::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 4px;
+
+    background-color: #ffffff;
+    transform: rotate(45deg);
   }
 }
 
