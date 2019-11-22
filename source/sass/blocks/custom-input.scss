@@ -1,0 +1,31 @@
+$input-default: #f2f2f2;
+$input-hover: #e5e5e5;
+$input-active: #ffffff;
+
+.custom-input {
+  height: 58px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  @include fontprop(#333333, 18px, 26px);
+  font-weight: bold;
+  text-transform: none;
+
+  border: solid 4px $input-default;
+  background-color: $input-default;
+  outline: none;
+
+  &:hover {
+    background-color: $input-hover;
+    border: solid 4px $input-hover;
+  }
+
+  &:focus {
+    background-color: $input-active;
+    border: solid 4px $input-hover;
+  }
+
+  &::placeholder {
+    color: #333333;
+  }
+}
