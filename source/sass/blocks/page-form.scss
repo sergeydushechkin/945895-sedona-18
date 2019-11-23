@@ -1,0 +1,10 @@
+.page-form__header {
+  @include fontprop(#000000, 18px, 26px);
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-form__description {
+  @include fontprop(#333333, 14px, 24px);
+  text-align: center;
+}

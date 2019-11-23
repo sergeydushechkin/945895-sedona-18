@@ -14,15 +14,39 @@
   background-color: $light-grey-blue;
   background-repeat: no-repeat;
 
-  &--twitter {
+  &::before {
+    content: "";
+    position: relative;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+
+  &--twitter::before {
     background-image: url("./../../img/icon-twitter.svg");
   }
 
-  &--facebook {
+  &--facebook::before {
     background-image: url("./../../img/icon-facebook.svg");
   }
 
-  &--youtube {
+  &--youtube::before {
     background-image: url("./../../img/icon-youtube.svg");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $light-grey-blue-hover;
+  }
+
+  &:active {
+    background-color: $light-grey-blue-active;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }

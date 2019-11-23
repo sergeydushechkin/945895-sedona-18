@@ -1,0 +1,65 @@
+
+$checkbox-default: #f2f2f2;
+$checkbox-hover: #e5e5e5;
+$checkbox-active: #d5d5d5;
+
+.custom-checkbox__control {
+  opacity: 0;
+}
+
+.custom-checkbox__control:checked + .custom-checkbox__label::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 46px;
+  height: 46px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-checkbox__control:active + .custom-checkbox__label::before {
+  background-color: $checkbox-active;
+  border-color: $checkbox-active;
+}
+
+.custom-checkbox__control:active + .custom-checkbox__label::after {
+  opacity: 0.3;
+}
+
+.custom-checkbox__control:disabled + .custom-checkbox__label::before,
+.custom-checkbox__control:disabled + .custom-checkbox__label::after {
+  opacity: 0.5;
+}
+
+.custom-checkbox__control:focus + .custom-checkbox__label::before {
+  background-color: $checkbox-hover;
+  border-color: $checkbox-hover;
+}
+
+.custom-checkbox__label {
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: -10px;
+    width: 46px;
+    height: 46px;
+
+    background-color: $checkbox-default;
+    border: solid 5px $checkbox-default;
+    border-radius: 3px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $checkbox-hover;
+    border-color: $checkbox-hover;
+  }
+}

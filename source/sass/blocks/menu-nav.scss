@@ -1,12 +1,20 @@
-.main-nav__list {
+.menu-nav__list {
   @include indents_null;
 
   display: flex;
   flex-direction: column;
   list-style: none;
+
+  &--close {
+    display: none;
+  }
 }
 
-.main-nav__link {
+.menu-nav__item:first-child {
+  position: relative;
+}
+
+.menu-nav__link {
   padding: 10px 0;
   margin-bottom: 1px;
   display: block;

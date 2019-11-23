@@ -7,33 +7,39 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
+      <nav class="page-header__nav menu-nav">
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <button class="page-header__toggle">Открыть меню</button>
+        <div class="page-header__pane">
+          <a class="page-header__logo" href="">
+            <img src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
+          </a>
+          <button class="page-header__toggle page-header__toggle--open">
+            <span class="visually-hidden">Переключение меню</span>
+          </button>
+        </div>
       </nav>
-      <img class="page-header__image" src="https://via.placeholder.com/150x150" alt="Изображение города Седона" width="150" height="150">
+      <div class="page-header__label">
+        <img class="page-header__image" src="./img/text-sedona-index.svg" alt="Изображение города Седона" width="280" height="280">
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="page-main__header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 
-      <section class="reasons">
+      <section class="page-main__reasons reasons">
         <h2 class="visually-hidden">Причины посетить Седону</h2>
         <p class="reasons__introduction">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
         <ul class="reasons__list">
@@ -42,9 +48,7 @@
             <h3 class="reasons__name">Настоящий городок</h3>
             <p class="reasons__description">- №1 -</p>
             <p class="reasons__description">Седона не аттрикцион для туриство, там течет своя жизнь</p>
-
             <img class="reasons__image" src="./img/main-city-mobile@1x.jpg" alt="Изображение постройки города Седона" width="320" height="260">
-
             <ul class="reason-one__list">
               <li class="reason-one__item">
                 <h4 class="reason-one__header reason-one__header--housing">Жилье</h4>
@@ -60,42 +64,37 @@
               </li>
             </ul>
           </li>
-
           <li class="reasons__item">
             <h3 class="reasons__name">Там есть мост Мост дьявола</h3>
             <p class="reasons__description">- №2 -</p>
             <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <img class="reasons__image" src="./img/photo-bridge-mobile@1x.jpg" alt="Изображение Моста дьявола" width="320" height="280">
           </li>
-
           <li class="reasons__item reasons__item--bggrey">
             <h3 class="reasons__name reasons__name--dark">Небольщая площадь</h3>
             <p class="reasons__description reasons__description--dark">- №3 -</p>
             <p class="reasons__description reasons__description--dark">Все интересные места находятся очень близко</p>
           </li>
-
           <li class="reasons__item reasons__item--bggrey">
             <h3 class="reasons__name reasons__name--dark">Красивая дорога</h3>
             <p class="reasons__description reasons__description--dark">- №4 -</p>
             <p class="reasons__description reasons__description--dark">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-
           <li class="reasons__item reasons__item--bggrey">
             <h3 class="reasons__name reasons__name--dark">Мало туристов</h3>
             <p class="reasons__description reasons__description--dark">- №5 -</p>
             <p class="reasons__description reasons__description--dark">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-
         </ul>
       </section>
 
-      <section class="interest">
+      <section class="page-main__interest interest">
         <h2 class="interest__header">Заинтересовались</h2>
         <p class="interest__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="interest__button button" href="">Найти гостиницу</a>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1672890.7030045255!2d-112.9241551902802!3d35.00776948267189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1573676279130!5m2!1sru!2sru"
-          width="600" height="450" allowfullscreen="">
+        <iframe class="interest__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1672890.7030045255!2d-112.9241551902802!3d35.00776948267189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1573676279130!5m2!1sru!2sru"
+          width="320" height="280" allowfullscreen="">
         </iframe>
       </section>
 
@@ -121,10 +120,13 @@
 
       <p class="page-footer__developer developers">Разработано
         <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="developers__logo" src="./img/logo-htmlacademy.svg" alt="Интенсив HTML Academy: «Профессиональный HTML и CSS, уровень 2»" width="27" height="34">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path class="developers__logo" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
         </a>
       </p>
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,1 +1,91 @@
-/*123 */
+.video__header {
+  @include fontprop(#000000, 18px, 26px);
+  font-weight: bold;
+  text-align: center;
+}
+
+.video__description {
+  @include fontprop(#333333, 14px, 24px);
+  text-align: center;
+}
+
+.video__player {
+  position: relative;
+}
+
+.video__playback {
+  bottom: 69px;
+  left: 20px;
+
+  position: absolute;
+  width: 280px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__line {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 20px;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__position {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: 30px;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.video__controls {
+  position: relative;
+
+  left: 20px;
+  top: -3px;
+  width: 280px;
+  height: 66px;
+  margin: 0;
+
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.video__control {
+  position: absolute;
+  top: calc(50% - 10px);
+  border: none;
+  background-color: transparent;
+
+  &:hover .video__icon,
+  &:focus .video__icon {
+    fill: #333333;
+  }
+
+  &:active .video__icon {
+    opacity: 0.3;
+  }
+
+  &--repeat {
+    left: 20px;
+  }
+
+  &--subtitles {
+    right: 50px;
+  }
+
+  &--fullscreen {
+    right: 20px;
+  }
+}
+
+.video__icon {
+  fill: #5c6870;
+}
