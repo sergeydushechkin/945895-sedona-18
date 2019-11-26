@@ -1,7 +1,11 @@
 .socials__list {
-  font-size: 0;
   display: flex;
+  justify-content: center;
   list-style: none;
+
+  padding: 0;
+
+  font-size: 0;
 }
 
 .socials__link {

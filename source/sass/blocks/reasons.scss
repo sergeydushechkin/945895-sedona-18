@@ -8,12 +8,12 @@
   list-style: none;
 }
 
-.reasons__item {
+.reasons__text {
   background-color: $light-grey-blue;
-}
 
-.reasons__item--bggrey {
-  background-color: #eeeeee;
+  &--bggrey {
+    background-color: #eeeeee;
+  }
 }
 
 .reasons__name {
