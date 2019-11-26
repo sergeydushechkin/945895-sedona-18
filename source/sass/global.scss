@@ -28,6 +28,8 @@ html {
 }
 
 body {
+  min-width: 320px;
+
   @include indents_null;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
