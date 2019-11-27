@@ -1,0 +1,70 @@
+$light-grey-blue: #81b3d2;
+$light-grey-blue-hover: #669ec0;
+$light-grey-blue-active: #5496bd;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  background-image: url("../img/sedona-index-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 320px auto;
+
+  min-height: 3610px;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background-image: url("../img/sedona-index-tablet.jpg");
+    background-size: 768px auto;
+
+    min-height: 2666px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-image: url("../img/sedona-index-desktop.jpg");
+    background-size: 1280px auto;
+
+    min-height: 2679px;
+  }
+}
