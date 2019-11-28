@@ -8,3 +8,9 @@
   font-size: $fontsize;
   line-height: $lineheight;
 }
+
+@mixin resetlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

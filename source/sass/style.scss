@@ -1,9 +1,8 @@
 @import "./normalize.scss";
-@import "./outline.scss"
-// @import "./fonts.scss";
-// @import "./vars.scss";
-// @import "./mixins.scss";
-// @import "./global.scss";
+@import "./fonts.scss";
+@import "./vars.scss";
+@import "./mixins.scss";
+@import "./global.scss";
 // @import "./blocks/button.scss";
 // @import "./blocks/custom-input.scss";
 // @import "./blocks/custom-radio.scss";
@@ -22,3 +21,5 @@
 // @import "./blocks/video.scss";
 // @import "./blocks/page-form.scss";
 // @import "./blocks/form.scss";
+
+@import "./outline.scss";
