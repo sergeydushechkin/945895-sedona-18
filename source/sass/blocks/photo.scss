@@ -2,6 +2,14 @@
   @include fontprop(#000000, 14px, 24px);
 }
 
+.photo__wrap {
+  @include indents_null;
+}
+
+.photo__image {
+  width: 100%;
+}
+
 .photo__header {
   font-weight: bold;
 }

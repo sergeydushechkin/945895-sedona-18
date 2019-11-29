@@ -1,3 +1,46 @@
+.gallery {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
 .gallery__list {
-  list-style: none;
+  @include resetlist;
+}
+
+.gallery__item {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    margin-bottom: 70px;
+    padding: 0 60px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item {
+    width: 50%;
+  }
+
+  .gallery__item--wide {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    padding: 0 40px;
+  }
+
+  .gallery__item {
+    width: 33.33%;
+  }
+
+  .gallery__item--wide {
+    width: 100%;
+  }
 }

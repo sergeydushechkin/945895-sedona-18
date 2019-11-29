@@ -1,10 +1,18 @@
+.video {
+  margin-bottom: 80px;
+}
+
 .video__header {
+  margin-bottom: 40px;
+
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
   text-align: center;
 }
 
 .video__description {
+  margin-bottom: 40px;
+
   @include fontprop(#333333, 14px, 24px);
   text-align: center;
 }
@@ -13,13 +21,19 @@
   position: relative;
 }
 
+.video__picture {
+  display: block;
+  width: 320px;
+  min-height: 201px;
+}
+
 .video__playback {
+  position: absolute;
   bottom: 69px;
   left: 20px;
-
-  position: absolute;
   width: 280px;
   height: 45px;
+
   background-color: rgba(0, 0, 0, 0.6);
 }
 

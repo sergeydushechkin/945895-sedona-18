@@ -1,4 +1,6 @@
 .reasons__introduction {
+  margin-bottom: 30px;
+
   @include fontprop(#333333, 14px, 26px);
   text-align: center;
 }
@@ -8,12 +10,12 @@
   list-style: none;
 }
 
-.reasons__item {
+.reasons__text {
   background-color: $light-grey-blue;
-}
 
-.reasons__item--bggrey {
-  background-color: #eeeeee;
+  &--bggrey {
+    background-color: #eeeeee;
+  }
 }
 
 .reasons__name {
@@ -51,4 +53,49 @@
 .reason-one__description {
   @include fontprop(#333333, 14px, 21px);
   margin: 0;
+}
+
+.reasons__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__introduction {
+    margin-bottom: 0;
+  }
+
+  .reasons__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reasons__item {
+    width: 33.333%;
+  }
+
+  .reasons__item--near {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .reasons__text {
+    width: 100%;
+    height: 260px;
+  }
+
+  .reasons__text--near {
+    width: 33.333%;
+  }
+
+  .reasons__text--second {
+    order: 1;
+  }
+
+  .reasons__image {
+    flex-grow: 1;
+    height: 260px;
+  }
 }

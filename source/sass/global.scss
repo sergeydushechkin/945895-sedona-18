@@ -28,7 +28,16 @@ html {
 }
 
 body {
+  min-width: 320px;
+
   @include indents_null;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+}
+
+
+@media (min-width: $desktop-width) {
+  body {
+    background-color: #f2f2f2;
+  }
 }

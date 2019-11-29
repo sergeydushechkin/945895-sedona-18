@@ -3,7 +3,32 @@
 }
 
 .page-footer__hashtag {
+  margin-bottom: 40px;
+
   @include fontprop(#000000, 21px, 26px);
   font-weight: bold;
   text-align: center;
+}
+
+.page-footer__socials {
+  margin-bottom: 40px;
+}
+
+.page-footer__developer {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .page-footer__developer {
+    margin: 0;
+  }
 }
