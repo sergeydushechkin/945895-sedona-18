@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+.photo__wrap {
+  @include indents_null;
+}
+
 .photo__author {
   text-transform: none;
 }

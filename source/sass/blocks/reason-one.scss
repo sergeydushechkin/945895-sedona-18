@@ -1,0 +1,20 @@
+.reason-one__list {
+  @include resetlist;
+}
+
+@media (min-width: $tablet-width) {
+  .reason-one__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include resetlist;
+  }
+
+  .reason-one__item {
+    display: block;
+
+    flex-grow: 1;
+    height: 332px;
+  }
+}

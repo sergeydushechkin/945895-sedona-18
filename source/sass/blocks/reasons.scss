@@ -1,4 +1,6 @@
 .reasons__introduction {
+  margin-bottom: 30px;
+
   @include fontprop(#333333, 14px, 26px);
   text-align: center;
 }
@@ -56,4 +58,44 @@
 .reasons__image {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__introduction {
+    margin-bottom: 0;
+  }
+
+  .reasons__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reasons__item {
+    width: 33%;
+  }
+
+  .reasons__item--near {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .reasons__text {
+    width: 100%;
+    height: 260px;
+  }
+
+  .reasons__text--near {
+    width: 33%;
+  }
+
+  .reasons__text--second {
+    order: 1;
+  }
+
+  .reasons__image {
+    flex-grow: 1;
+    height: 260px;
+  }
 }

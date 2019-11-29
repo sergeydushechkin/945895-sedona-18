@@ -1,5 +1,7 @@
 .page-header {
   position: relative;
+
+  margin-bottom: 40px;
 }
 
 .page-header__logo {
@@ -89,6 +91,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-header__label--alternate {
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__label--alternate {
+    margin-bottom: 115px;
+  }
+}
+
 .page-header__image {
   position: relative;
   display: block;
@@ -98,4 +112,31 @@
 
 .page-header__image--compact {
   top: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 50px;
+  }
+
+  .page-header__pane {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    width: 104px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__pane {
+    width: 200px;
+  }
 }

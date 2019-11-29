@@ -1,5 +1,23 @@
 .page-main__header {
+  margin-bottom: 40px;
+
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
   text-align: center;
+}
+
+.page-main__reasons {
+  margin-bottom: 40px;
+}
+
+.reasons__list {
+  @include resetlist;
+}
+
+.reasons__image {
+  width: 320px;
+}
+
+.page-main__interest {
+  margin-bottom: 40px;
 }

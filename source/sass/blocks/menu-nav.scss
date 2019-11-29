@@ -1,9 +1,9 @@
 .menu-nav__list {
   @include indents_null;
+  @include resetlist;
 
   display: flex;
   flex-direction: column;
-  list-style: none;
 
   &--close {
     display: none;
@@ -37,5 +37,28 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: $light-grey-blue-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-nav__item {
+    margin: 0 7px;
+    display: block;
+    width: 150px;
+  }
+
+  .menu-nav__item:nth-child(2) {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-nav__item {
+    margin: 0 40px;
   }
 }
