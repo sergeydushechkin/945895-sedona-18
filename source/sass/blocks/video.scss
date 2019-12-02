@@ -28,6 +28,7 @@
 }
 
 .video__controls {
+  display: flex;
   position: relative;
 
   left: 20px;
@@ -59,7 +60,7 @@
 
 .video__position {
   position: absolute;
-  top: calc(50% - 5px);
+  top: calc(50% - 4px);
   left: 30px;
   width: 9px;
   height: 9px;
@@ -71,8 +72,7 @@
 }
 
 .video__control {
-  position: absolute;
-  top: calc(50% - 10px);
+  padding: 0 20px;
   border: none;
   background-color: transparent;
 
@@ -86,15 +86,7 @@
   }
 
   &--repeat {
-    left: 20px;
-  }
-
-  &--subtitles {
-    right: 50px;
-  }
-
-  &--fullscreen {
-    right: 20px;
+    margin-right: auto;
   }
 }
 
