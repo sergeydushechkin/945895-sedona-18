@@ -20,7 +20,14 @@
   list-style: none;
 }
 
+.form__user-item {
+  display: flex;
+}
+
 .form__input {
+  flex-grow: 1;
+  width: 100px;
+
   &--email,
   &--telephone {
     padding-right: 80px;

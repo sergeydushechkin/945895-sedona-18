@@ -35,6 +35,9 @@ body {
   text-transform: uppercase;
 }
 
+fieldset {
+  padding: 0;
+}
 
 @media (min-width: $desktop-width) {
   body {
