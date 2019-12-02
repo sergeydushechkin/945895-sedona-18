@@ -97,11 +97,12 @@
   top: 55px;
   margin: 0 auto;
   width: 280px;
-  height: 214px;
-}
+  height: 280px;
 
-.page-header__image--compact {
-  top: 45px;
+  &--compact {
+    top: 50px;
+    height: 39px;
+  }
 }
 
 @media (min-width: $tablet-width) {
