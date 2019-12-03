@@ -19,18 +19,33 @@
 
 .video__player {
   position: relative;
+  margin: 0 auto;
 }
 
 .video__picture {
   display: block;
   width: 320px;
-  min-height: 201px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.video__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+
+  text-align: center;
+  background-color: #f2f2f2;
 }
 
 .video__playback {
   position: absolute;
-  bottom: 69px;
-  left: 20px;
+  bottom: 66px;
   width: 280px;
   height: 45px;
 
@@ -48,7 +63,7 @@
 
 .video__position {
   position: absolute;
-  top: calc(50% - 5px);
+  top: calc(50% - 4px);
   left: 30px;
   width: 9px;
   height: 9px;
@@ -57,26 +72,15 @@
   border: none;
   border-radius: 50%;
   background-color: #ffffff;
-}
-
-.video__controls {
-  position: relative;
-
-  left: 20px;
-  top: -3px;
-  width: 280px;
-  height: 66px;
-  margin: 0;
-
-  text-align: center;
-  background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .video__control {
-  position: absolute;
-  top: calc(50% - 10px);
+  padding: 0 20px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  fill: #5c6870;
 
   &:hover .video__icon,
   &:focus .video__icon {
@@ -84,22 +88,79 @@
   }
 
   &:active .video__icon {
+    fill: #333333;
     opacity: 0.3;
   }
 
   &--repeat {
-    left: 20px;
-  }
-
-  &--subtitles {
-    right: 50px;
-  }
-
-  &--fullscreen {
-    right: 20px;
+    margin-right: auto;
   }
 }
 
 .video__icon {
   fill: #5c6870;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 0 60px;
+  }
+
+  .video__picture {
+    width: 100%;
+  }
+
+  .video__controls {
+    position: relative;
+
+    bottom: 93px;
+    width: 100%;
+    height: 93px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__playback {
+    position: relative;
+    bottom: auto;
+    width: 75%;
+
+    background-color: transparent;
+  }
+
+  .video__line {
+    left: 5%;
+    width: 90%;
+  }
+
+  .video__position {
+    left: 20%;
+  }
+
+  .video__control {
+    .video__icon {
+      fill: #ffffff;
+    }
+
+    &:hover .video__icon,
+    &:focus .video__icon {
+      fill: #ffffff;
+      opacity: 0.6;
+    }
+
+    &:active .video__icon {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+
+    &--repeat {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding: 0 200px;
+  }
 }
