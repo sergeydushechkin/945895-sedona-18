@@ -1,5 +1,6 @@
 .form__header {
   display: block;
+  margin: 0;
 
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
@@ -7,12 +8,19 @@
 }
 
 .form__label {
+  display: inline-block;
+  padding-right: 10px;
+
   @include fontprop(#333333, 14px, 26px);
+
+  &--upper {
+    margin-bottom: 7px;
+  }
 }
 
 .form__user {
   border: none;
-  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
 }
 
 .form__user-list {
@@ -22,14 +30,18 @@
 
 .form__user-item {
   display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .form__input {
   flex-grow: 1;
   width: 100px;
+  margin-bottom: 20px;
 
   &--email,
   &--telephone {
+    width: 100%;
     padding-right: 80px;
   }
 }
@@ -37,7 +49,7 @@
 .form__telephone,
 .form__email {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .form__telephone::before,
@@ -64,7 +76,6 @@
 
 .form__contacts {
   border: none;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .form__contacts-list {
@@ -81,7 +92,6 @@
 
 .form__impression {
   border: none;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .form__impression-list {
@@ -95,7 +105,6 @@
 
 .form__sight {
   border: none;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .form__sight-list {
@@ -104,7 +113,7 @@
 }
 
 .form__checkbox {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .form__emotions {
@@ -113,5 +122,73 @@
 
 .form__emotions-text {
   height: auto;
+  width: 100%;
+
+  margin-bottom: 20px;
+
   resize: none;
+}
+
+.form__submit {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__header {
+    text-align: left;
+
+    &--centered {
+      padding: 0 150px;
+
+      text-align: center;
+    }
+  }
+
+  .form__contacts,
+  .form__sight {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .form__sight-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 0 100px;
+  }
+
+  .form__sight-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__contacts-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts-item {
+    width: auto;
+  }
+
+  .form__sight-list {
+    padding: 0;
+  }
+
+  .form__sight-item {
+    width: auto;
+  }
+
+  .form__telephone,
+  .form__email {
+    display: inline-block;
+    width: 240px;
+  }
 }

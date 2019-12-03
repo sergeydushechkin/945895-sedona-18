@@ -39,95 +39,107 @@
       </header>
 
       <main class="page-form">
-        <h1 class="page-form__header">Оставьте свой отзыв</h1>
-        <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="page-form__wrapper">
+          <h1 class="page-form__header">Оставьте свой отзыв</h1>
+          <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
 
         <section class="page-form__content">
             <h2 class="visually-hidden">Форма для отправки отзыва</h2>
 
             <form class="page-form__form form" method="POST" action="https://echo.htmlacademy.ru">
-              <fieldset class="form__user">
-                <legend class="form__header">Представьтесь:</legend>
-                <ul class="form__user-list">
-                  <li class="form__user-item">
-                    <label class="form__label" for="id__user-name">Имя*:</label>
-                    <input class="form__input custom-input" type="text" name="username" id="id__user-name" placeholder="Петр" required>
-                  </li>
-                  <li class="form__user-item">
-                    <label class="form__label" for="id__user-surname">Фамилия*:</label>
-                    <input class="form__input custom-input" type="text" name="surname" id="id__user-surname" placeholder="Иванов" required>
-                  </li>
-                  <li class="form__user-item">
-                    <label class="form__label" for="id__user-patronymic">Отчество:</label>
-                    <input class="form__input custom-input" type="text" name="patronymic" id="id__user-patronymic" placeholder="Александрович">
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="page-form__wrapper page-form__wrapper--half">
+                <fieldset class="form__user">
+                  <legend class="form__header">Представьтесь:</legend>
+                  <ul class="form__user-list">
+                    <li class="form__user-item">
+                      <label class="form__label" for="id__user-name">Имя*:</label>
+                      <input class="form__input custom-input" type="text" name="username" id="id__user-name" placeholder="Петр" required>
+                    </li>
+                    <li class="form__user-item">
+                      <label class="form__label" for="id__user-surname">Фамилия*:</label>
+                      <input class="form__input custom-input" type="text" name="surname" id="id__user-surname" placeholder="Иванов" required>
+                    </li>
+                    <li class="form__user-item">
+                      <label class="form__label" for="id__user-patronymic">Отчество:</label>
+                      <input class="form__input custom-input" type="text" name="patronymic" id="id__user-patronymic" placeholder="Александрович">
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
 
-              <fieldset class="form__contacts">
-                <legend class="form__header">Контактная информация:</legend>
-                <ul class="form__contacts-list">
-                  <li class="form__contacts-item">
-                    <label class="form__label" for="id__user-telephone">Контактный телефон*:</label>
-                    <span class="form__telephone">
-                      <input class="form__input form__input--telephone custom-input" type="tel" name="telephone" id="id__user-telephone" placeholder="Введите телефон" required>
-                    </span>
-                  </li>
-                  <li class="form__contacts-item">
-                    <label class="form__label" for="id__user-email">Электронная почта*:</label>
-                    <span class="form__email">
-                      <input class="form__input form__input--email custom-input" type="email" name="email" id="id__user-email" placeholder="Введите e-mail" required>
-                    </span>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="page-form__wrapper">
+                <fieldset class="form__contacts">
+                  <legend class="form__header form__header--centered">Контактная информация:</legend>
+                  <ul class="form__contacts-list">
+                    <li class="form__contacts-item">
+                      <label class="form__label form__label--upper" for="id__user-telephone">Контактный телефон*:</label>
+                      <span class="form__telephone">
+                        <input class="form__input form__input--telephone custom-input" type="tel" name="telephone" id="id__user-telephone" placeholder="Введите телефон" required>
+                      </span>
+                    </li>
+                    <li class="form__contacts-item">
+                      <label class="form__label form__label--upper" for="id__user-email">Электронная почта*:</label>
+                      <span class="form__email">
+                        <input class="form__input form__input--email custom-input" type="email" name="email" id="id__user-email" placeholder="Введите e-mail" required>
+                      </span>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
 
-              <fieldset class="form__impression">
-                <legend class="form__header">Ваше общее впечатление:</legend>
-                <ul class="form__impression-list">
-                  <li class="form__impression-item custom-radio">
-                    <input class="form__radio custom-radio__control" type="radio" name="impression" value="positive" id="id__user-positive" checked>
-                    <label  class="form__label-radio custom-radio__label" for="id__user-positive">Скорее положительное</label>
-                  </li>
-                  <li class="form__impression-item custom-radio">
-                    <input class="form__radio custom-radio__control" type="radio" name="impression" value="negative" id="id__user-negative">
-                    <label  class="form__label-radio custom-radio__label" for="id__user-negative">Скорее отрицательное</label>
-                  </li>
-                  <li class="form__impression-item custom-radio">
-                    <input class="form__radio custom-radio__control" type="radio" name="impression" value="difficult" id="id__user-difficult">
-                    <label  class="form__label-radio custom-radio__label" for="id__user-difficult">Затрудняюсь ответить</label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="page-form__wrapper page-form__wrapper--half page-form__wrapper--first">
+                <fieldset class="form__impression">
+                  <legend class="form__header">Ваше общее впечатление:</legend>
+                  <ul class="form__impression-list">
+                    <li class="form__impression-item custom-radio">
+                      <input class="form__radio custom-radio__control" type="radio" name="impression" value="positive" id="id__user-positive" checked>
+                      <label  class="form__label-radio custom-radio__label" for="id__user-positive">Скорее положительное</label>
+                    </li>
+                    <li class="form__impression-item custom-radio">
+                      <input class="form__radio custom-radio__control" type="radio" name="impression" value="negative" id="id__user-negative">
+                      <label  class="form__label-radio custom-radio__label" for="id__user-negative">Скорее отрицательное</label>
+                    </li>
+                    <li class="form__impression-item custom-radio">
+                      <input class="form__radio custom-radio__control" type="radio" name="impression" value="difficult" id="id__user-difficult">
+                      <label  class="form__label-radio custom-radio__label" for="id__user-difficult">Затрудняюсь ответить</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
 
-              <fieldset class="form__sight">
-                <legend class="form__header">Посещенные достопримечательности:</legend>
-                <ul class="form__sight-list">
-                  <li class="form__sight-item custom-checkbox">
-                    <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="bridge" id="id__sight-bridge" checked>
-                    <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-bridge">Мост дьявола</label>
-                  </li>
-                  <li class="form__sight-item">
-                    <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="mountain" id="id__sight-mountain" checked>
-                    <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-mountain">Гора-Колокол</label>
-                  </li>
-                  <li class="form__sight-item">
-                    <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="park" id="id__sight-park" checked>
-                    <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-park">Слайд-парк</label>
-                  </li>
-                  <li class="form__sight-item">
-                    <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="rocks" id="id__sight-rocks">
-                    <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-rocks">Красные скалы</label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="page-form__wrapper">
+                <fieldset class="form__sight">
+                  <legend class="form__header form__header--centered">Посещенные достопримечательности:</legend>
+                  <ul class="form__sight-list">
+                    <li class="form__sight-item custom-checkbox">
+                      <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="bridge" id="id__sight-bridge" checked>
+                      <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-bridge">Мост дьявола</label>
+                    </li>
+                    <li class="form__sight-item custom-checkbox">
+                      <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="mountain" id="id__sight-mountain" checked>
+                      <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-mountain">Гора-Колокол</label>
+                    </li>
+                    <li class="form__sight-item custom-checkbox">
+                      <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="park" id="id__sight-park" checked>
+                      <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-park">Слайд-парк</label>
+                    </li>
+                    <li class="form__sight-item custom-checkbox">
+                      <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="rocks" id="id__sight-rocks">
+                      <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-rocks">Красные скалы</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
 
-              <fieldset class="form__emotions">
-                <legend class="visually-hidden">Эмоции</legend>
-                <label class="form__header" for="id__emotions">Опишите свои эмоции:</label>
-                <textarea class="form__emotions-text custom-input" id="id__emotions" name="emotions" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-                <button class="form__submit button" type="submit">Отправить отзыв</button>
-              </fieldset>
+              <div class="page-form__wrapper page-form__wrapper--noborder">
+                <fieldset class="form__emotions">
+                  <legend class="visually-hidden form__header--centered">Эмоции</legend>
+                  <label class="form__header form__header--centered" for="id__emotions">Опишите свои эмоции:</label>
+                  <textarea class="form__emotions-text custom-input" id="id__emotions" name="emotions" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+                  <button class="form__submit button" type="submit">Отправить отзыв</button>
+                </fieldset>
+              </div>
             </form>
           </section>
 

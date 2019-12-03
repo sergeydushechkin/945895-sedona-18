@@ -1,5 +1,12 @@
-.page-form {
+.page-form__wrapper {
   padding: 0 20px;
+  padding-top: 25px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  &--noborder {
+    border-bottom: none;
+  }
 }
 
 .page-form__header {
@@ -11,4 +18,34 @@
 .page-form__description {
   @include fontprop(#333333, 14px, 24px);
   text-align: center;
+}
+
+
+/* -------------Планшетная версия------------- */
+@media (min-width: $tablet-width) {
+  .page-form {
+    padding: 0 60px;
+  }
+
+  .page-form__wrapper {
+    padding: 0;
+    border: none;
+    width: 100%;
+
+    &--half {
+      width: 50%;
+    }
+
+    &--first {
+      order: -1;
+    }
+  }
+}
+
+
+/* -------------Десктопная версия------------- */
+@media (min-width: $desktop-width) {
+  .page-form {
+    padding: 0 120px;
+  }
 }
