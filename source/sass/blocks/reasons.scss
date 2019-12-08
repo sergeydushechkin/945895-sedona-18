@@ -1,5 +1,6 @@
 .reasons__introduction {
-  margin-bottom: 30px;
+  margin-bottom: 6px;
+  padding: 0 25px;
 
   @include fontprop(#333333, 14px, 26px);
   text-align: center;
@@ -11,16 +12,26 @@
 }
 
 .reasons__text {
+  padding: 0 20px;
+  padding-bottom: 25px;
   background-color: $light-grey-blue;
 
   &--bggrey {
     background-color: #eeeeee;
+  }
+
+  &--background {
+    padding-top: 77px;
+
+    background-image: url("../../img/bg-triangle.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .reasons__name {
   @include fontprop(#ffffff, 18px, 26px);
   margin: 0;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
 }
@@ -32,6 +43,7 @@
 .reasons__description {
   @include fontprop(#ffffff, 14px, 21px);
   margin: 0;
+  margin-bottom: 15px;
   text-align: center;
 }
 
