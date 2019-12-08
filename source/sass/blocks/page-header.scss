@@ -29,20 +29,20 @@
   cursor: pointer;
 
   &--open {
-    top: 20%;
-    right: 5%;
+    top: 13%;
+    right: 4%;
   }
 
   &--close {
-    top: -230px;
-    right: 5%;
+    top: -213px;
+    right: 4%;
   }
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    width: 27px;
+    width: 24px;
     height: 4px;
   }
 
@@ -54,11 +54,6 @@
       0 -8px 0 0 $light-grey-blue;
   }
 
-  &--close::before,
-  &--close::after {
-    background-color: #ffffff;
-  }
-
   &--close::before {
     transform: rotate(-45deg);
   }
@@ -66,11 +61,15 @@
   &--close::after {
     content: "";
     display: block;
-    width: 27px;
     height: 4px;
 
-    background-color: #ffffff;
     transform: rotate(45deg);
+  }
+
+  &--close::before,
+  &--close::after {
+    width: 26px;
+    background-color: #ffffff;
   }
 }
 

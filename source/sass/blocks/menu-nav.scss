@@ -1,5 +1,4 @@
 .menu-nav__list {
-  @include indents_null;
   @include resetlist;
 
   display: flex;
@@ -15,8 +14,9 @@
 }
 
 .menu-nav__link {
-  padding: 10px 0;
-  margin-bottom: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   display: block;
 
   @include fontprop(#ffffff, 18px, 40px);
@@ -27,8 +27,16 @@
   background-color: $light-grey-blue;
   box-shadow:
     0 1px 0 0 rgba(255, 255, 255, 0.2) inset,
-    0 1px 0 0 rgba(1, 1, 1, 0.2);
+    0 -1px 0 0 rgba(1, 1, 1, 0.2) inset;
   cursor: pointer;
+
+  &--first {
+    box-shadow: 0 -1px 0 0 rgba(1, 1, 1, 0.2) inset;
+  }
+
+  &--last {
+    box-shadow: 0 -3px 3px 0 rgba(1, 1, 1, 0.2) inset;
+  }
 
   &:hover,
   &:focus {
