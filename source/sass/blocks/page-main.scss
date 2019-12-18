@@ -22,3 +22,15 @@
 .page-main__interest {
   margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    margin-bottom: 30px;
+    padding: 0 80px;
+    font-size: 21px;
+  }
+
+  .page-main__reasons {
+    margin-bottom: 55px;
+  }
+}

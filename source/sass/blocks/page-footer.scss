@@ -1,4 +1,5 @@
 .page-footer {
+  margin-bottom: 37px;
   background-color: #fefefe;
 }
 
@@ -11,7 +12,7 @@
 }
 
 .page-footer__socials {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .page-footer__developer {
@@ -25,7 +26,18 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+  }
+
+  .page-footer__hashtag {
+    margin: 0;
+  }
+
+  .page-footer__socials {
+    margin: 0;
   }
 
   .page-footer__developer {
