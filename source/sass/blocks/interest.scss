@@ -1,16 +1,29 @@
 .interest__header {
+  margin: 0;
+  margin-bottom: 20px;
+
   @include fontprop(#000000, 21px, 26px);
   font-weight: bold;
   text-align: center;
 }
 
 .interest__description {
+  margin-bottom: 35px;
+  padding: 0 20px;
+
   @include fontprop(#333333, 14px, 24px);
   text-align: center;
+}
+
+.interest__button {
+  width: 88%;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .interest__map {
   display: block;
   margin: 0 auto;
+
   border: none;
 }

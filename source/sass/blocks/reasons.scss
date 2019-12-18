@@ -11,13 +11,31 @@
   list-style: none;
 }
 
+.reasons__item {
+  &--bggrey {
+    background-color: #eeeeee;
+  }
+}
+
 .reasons__text {
   padding: 0 20px;
   padding-bottom: 25px;
+  padding-top: 38px;
+
   background-color: $light-grey-blue;
 
   &--bggrey {
-    background-color: #eeeeee;
+    margin: 0 20px;
+    padding: 0 15px;
+    padding-bottom: 13px;
+    padding-top: 27px;
+
+    box-shadow: 0 -1px 0 0 #d6d6d6 inset;
+    background-color: transparent;
+  }
+
+  &--last {
+    box-shadow: none;
   }
 
   &--background {
@@ -85,12 +103,12 @@
 
   .reasons__item {
     width: 33.333%;
-  }
 
-  .reasons__item--near {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    &--near {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
   }
 
   .reasons__text {

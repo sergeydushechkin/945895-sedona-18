@@ -1,5 +1,50 @@
 .reason-one__list {
   @include resetlist;
+  padding-top: 34px;
+  padding-bottom: 7px;
+  padding-right: 30px;
+  padding-left: 70px;
+}
+
+.reason-one__item {
+  margin-bottom: 29px;
+}
+
+.reason-one__header {
+  position: relative;
+  margin-bottom: 15px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--housing::before {
+    top: -8px;
+    left: -48px;
+    background-image: url("../../img/icon-house.svg");
+    background-size: 37%;
+  }
+
+  &--souvenirs::before {
+    top: -11px;
+    left: -45px;
+    background-image: url("../../img/icon-gift.svg");
+    background-size: 32%;
+  }
+
+  &--food::before {
+    top: -5px;
+    left: -51px;
+    background-image: url("../../img/icon-burger.svg");
+    background-size: 38%;
+  }
 }
 
 @media (min-width: $tablet-width) {

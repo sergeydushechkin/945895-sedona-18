@@ -8,12 +8,18 @@
   font-size: 0;
 }
 
+.socials__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .socials__link {
   display: block;
   width: 46px;
   height: 48px;
-
-  margin-right: 6px;
 
   background-color: $light-grey-blue;
   background-repeat: no-repeat;
