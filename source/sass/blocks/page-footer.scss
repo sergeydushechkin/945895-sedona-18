@@ -1,5 +1,5 @@
 .page-footer {
-  margin-bottom: 37px;
+  margin-bottom: 23px;
   background-color: #fefefe;
 }
 
@@ -42,5 +42,12 @@
 
   .page-footer__developer {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0 120px;
+    padding-bottom: 38px;
   }
 }

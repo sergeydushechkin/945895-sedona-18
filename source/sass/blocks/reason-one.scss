@@ -76,19 +76,19 @@
 
     &--housing::before {
       top: 59px;
-      left: 35%;
+      left: calc(50% - 38px);
       background-size: 93%;
     }
 
     &--souvenirs::before {
       top: 55px;
-      left: 37%;
+      left: calc(50% - 34px);
       background-size: 80%;
     }
 
     &--food::before {
       top: 62px;
-      left: 35%;
+      left: calc(50% - 38px);
       background-size: 94%;
     }
   }
@@ -104,5 +104,23 @@
   .reason-one__description {
     margin-bottom: 34px;
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-one__item {
+    margin-bottom: 49px;
+  }
+
+  .reason-one__header {
+    margin-bottom: 23px;
+  }
+
+  .reason-one__description {
+    padding: 0 10px;
+  }
+
+  .reason-one__wrap {
+    display: block;
   }
 }

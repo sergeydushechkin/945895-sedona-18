@@ -29,7 +29,7 @@
   &::before {
     content: "";
     position: relative;
-    top: 15px;
+    top: 18px;
     width: 20px;
     height: 20px;
     display: block;
@@ -42,6 +42,8 @@
   }
 
   &--facebook::before {
+    top: 14px;
+    left: 5px;
     background-image: url("./../../img/icon-facebook.svg");
   }
 

@@ -34,3 +34,9 @@
     margin-bottom: 55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    padding: 0 300px;
+  }
+}

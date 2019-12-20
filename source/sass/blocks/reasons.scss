@@ -12,7 +12,7 @@
 }
 
 .reasons__item {
-  &--bggrey {
+  &--others {
     background-color: #eeeeee;
   }
 }
@@ -24,7 +24,7 @@
 
   background-color: $light-grey-blue;
 
-  &--bggrey {
+  &--others {
     margin: 0 20px;
     padding: 0 15px;
     padding-bottom: 13px;
@@ -92,6 +92,7 @@
 
 @media (min-width: $tablet-width) {
   .reasons__introduction {
+    letter-spacing: 0.1px;
     margin-bottom: 50px;
   }
 
@@ -102,7 +103,7 @@
   }
 
   .reasons__item {
-    width: 33.333%;
+    width: 33.333333%;
 
     &--wide {
       display: flex;
@@ -144,10 +145,31 @@
 
   .reasons__description {
     margin-bottom: 21px;
+    letter-spacing: 0.1px;
   }
 
   .reasons__image {
     flex-grow: 1;
     height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__text {
+    padding: 50px 55px;
+    padding-bottom: 25px;
+
+    &--others {
+      padding: 44px 55px;
+    }
+  }
+
+  .reasons__name {
+    margin-bottom: 12px;
+    padding: 0 50px;
+  }
+
+  .reasons__wrap {
+    display: block;
   }
 }

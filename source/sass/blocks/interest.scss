@@ -46,3 +46,15 @@
     margin-bottom: 58px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .interest__description {
+    margin-bottom: 47px;
+    padding: 0 360px;
+  }
+
+  .interest__button {
+    width: 38%;
+    margin-bottom: 66px;
+  }
+}
