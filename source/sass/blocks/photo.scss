@@ -1,9 +1,19 @@
 .photo {
   @include fontprop(#000000, 14px, 24px);
+  box-shadow: 0 1px 0 0 #e5e5e5;
+
+  &:first-child {
+    box-shadow: 0 1px 0 0 #e5e5e5, 0 -1px 0 0 #e5e5e5;
+  }
 }
 
 .photo__wrap {
   @include indents_null;
+}
+
+.photo__link {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .photo__image {
@@ -11,6 +21,7 @@
 }
 
 .photo__header {
+  @include indents_null;
   font-weight: bold;
 }
 

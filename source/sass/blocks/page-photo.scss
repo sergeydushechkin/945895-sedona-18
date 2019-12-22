@@ -1,12 +1,13 @@
 .page-photo__header {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @include fontprop(#000000, 18px, 26px);
   text-align: center;
 }
 
 .page-photo__description {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding: 0 25px;
 
   @include fontprop(#333333, 14px, 24px);
   text-align: center;

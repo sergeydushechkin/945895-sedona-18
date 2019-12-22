@@ -1,6 +1,5 @@
 .gallery {
   margin-bottom: 40px;
-  padding: 0 20px;
 }
 
 .gallery__list {
@@ -9,6 +8,7 @@
 
 .gallery__item {
   width: 100%;
+  padding: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +24,7 @@
 
   .gallery__item {
     width: 50%;
+    padding: 0;
   }
 
   .gallery__item--wide {
