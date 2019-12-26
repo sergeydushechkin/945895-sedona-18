@@ -13,7 +13,7 @@
 
 .photo__link {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .photo__image {
@@ -21,28 +21,37 @@
 }
 
 .photo__header {
-  @include indents_null;
+  margin: 0;
+
+  @include fontprop(#000000, 14px, 24px);
   font-weight: bold;
+  word-spacing: 1px;
 }
 
 .photo__author {
+  margin: 0;
+  margin-bottom: 6px;
   text-transform: none;
 }
 
 .photo__like {
+  font-weight: bold;
+  vertical-align: bottom;
+  word-spacing: 8px;
+}
+
+.photo__like-button {
   width: 25px;
   height: 25px;
   font-size: 0;
 
-  vertical-align: middle;
+  vertical-align: top;
 
   border: none;
 
   background-color: transparent;
   background-image: url("../../img/icon-like.svg");
   background-repeat: no-repeat;
-}
 
-.photo__likes-value {
-  font-weight: bold;
+  cursor: pointer;
 }
