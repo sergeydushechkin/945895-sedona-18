@@ -23,20 +23,39 @@
 
 @media (min-width: $tablet-width) {
   .page-photo__header {
-    margin-bottom: 25px;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 
   .page-photo__description {
-    margin-bottom: 55px;
+    margin-bottom: 69px;
+    padding: 0 165px;
+  }
+
+  .page-photo__gallery {
+    margin-bottom: 67px;
+  }
+
+  .page-photo__video {
+    margin-bottom: 76px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-photo__header {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
   }
 
   .page-photo__description {
-    margin-bottom: 80px;
+    margin-bottom: 71px;
+    padding: 0 380px;
+  }
+
+  .page-photo__gallery {
+    margin-bottom: 70px;
+  }
+
+  .page-photo__video {
+    margin-bottom: 121px;
   }
 }

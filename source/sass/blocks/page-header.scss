@@ -111,6 +111,10 @@
 @media (min-width: $tablet-width) {
   .page-header {
     margin-bottom: 50px;
+
+    &--compact {
+      margin-bottom: 75px;
+    }
   }
 
   .page-header__pane {
@@ -140,7 +144,6 @@
     &--alternate {
       height: 290px;
       background-position: 50% 100%, 50% 100%;
-      margin-bottom: 75px;
     }
   }
 
@@ -151,13 +154,17 @@
   }
 
   .page-header__image--compact {
-    top: 95px;
-    width: 458px;
-    height: 78px;
+    top: -41px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    &--compact {
+      margin-bottom: 112px;
+    }
+  }
+
   .page-header__pane {
     width: 200px;
   }
@@ -174,7 +181,6 @@
     &--alternate {
       height: 301px;
       background-position: 50% 100%, 50% 100%;
-      margin-bottom: 115px;
     }
   }
 

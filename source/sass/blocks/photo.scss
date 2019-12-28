@@ -55,3 +55,85 @@
 
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .photo {
+    box-shadow: none;
+  }
+
+  .photo__link {
+    margin-bottom: 0;
+    line-height: 0;
+  }
+
+  .photo__image {
+    height: 267px;
+
+    &--large {
+      height: 400px;
+    }
+  }
+
+  .photo__caption {
+    display: flex;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+    background-color: #f2f2f2;
+  }
+
+  .photo__details {
+    width: 76%;
+    padding-right: 20px;
+
+    &--wide {
+      width: 89%;
+    }
+  }
+
+  .photo__like {
+    padding-top: 12px;
+
+    word-spacing: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__wrap {
+    position: relative;
+  }
+
+  .photo__caption {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+
+    padding-right: 5px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__details {
+    width: 79%;
+    padding-right: 20px;
+
+    &--wide {
+      width: 93.3%;
+    }
+  }
+
+  .photo__header {
+    color: #ffffff;
+  }
+
+  .photo__author {
+    color: #ffffff;
+  }
+
+  .photo__like {
+    color: #ffffff;
+  }
+}

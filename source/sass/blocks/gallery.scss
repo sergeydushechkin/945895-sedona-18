@@ -9,7 +9,6 @@
 
 @media (min-width: $tablet-width) {
   .gallery {
-    margin-bottom: 70px;
     padding: 0 60px;
   }
 
@@ -30,11 +29,11 @@
 
 @media (min-width: $desktop-width) {
   .gallery {
-    padding: 0 40px;
+    padding: 0;
   }
 
   .gallery__item {
-    width: 33.33%;
+    width: 33.333333%;
   }
 
   .gallery__item--wide {
