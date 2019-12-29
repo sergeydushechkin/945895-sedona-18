@@ -80,13 +80,14 @@
 .page-header__label {
   position: relative;
   margin: 0 auto;
-  width: $mobile-width;
+  width: 100%;
   height: 389px;
   background-image:
     url("../../img/bg-intro-triangle-mobile.svg"),
     url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 50% 100%, 50% 50%;
+  background-position: 49.8% 100%, 50% 50%;
+  background-size: cover, cover;
 
   &--alternate {
     height: 157px;
@@ -133,13 +134,14 @@
   }
 
   .page-header__label {
-    width: $tablet-width;
+    width: 100%;
     height: 518px;
     background-image:
       url("../../img/bg-intro-triangle-tablet.svg"),
       url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 50% 100%, 50% 50%;
+    background-size: 100%, cover;
 
     &--alternate {
       height: 290px;

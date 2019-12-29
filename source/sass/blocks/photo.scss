@@ -17,7 +17,9 @@
 }
 
 .photo__image {
-  width: 100%;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .photo__header {
@@ -67,6 +69,7 @@
   }
 
   .photo__image {
+    width: 100%;
     height: 267px;
 
     &--large {
