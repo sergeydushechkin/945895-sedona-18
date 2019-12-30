@@ -1,5 +1,5 @@
 .reasons__introduction {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   padding: 0 25px;
 
   @include fontprop(#333333, 14px, 26px);
@@ -65,10 +65,10 @@
   margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
-}
 
-.reasons__name--dark {
-  color: #000000;
+  &--dark {
+    color: #000000;
+  }
 }
 
 .reasons__description {
@@ -76,10 +76,14 @@
   margin: 0;
   margin-bottom: 15px;
   text-align: center;
-}
 
-.reasons__description--dark {
-  color: #333333;
+  &--number {
+    margin-bottom: 14px;
+  }
+
+  &--dark {
+    color: #333333;
+  }
 }
 
 .reason-one__list {
@@ -129,7 +133,7 @@
     width: 100%;
     margin: 0;
     padding: 44px 45px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     box-shadow: none;
 
     &--background {
@@ -173,7 +177,7 @@
 
 @media (min-width: $desktop-width) {
   .reasons__text {
-    padding: 50px 55px;
+    padding: 52px 55px;
     padding-bottom: 25px;
 
     &--others {

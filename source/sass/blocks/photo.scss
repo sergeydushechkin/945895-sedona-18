@@ -1,9 +1,13 @@
 .photo {
   @include fontprop(#000000, 14px, 24px);
-  box-shadow: 0 1px 0 0 #e5e5e5;
+  padding: 20px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #e5e5e5;
 
   &:first-child {
-    box-shadow: 0 1px 0 0 #e5e5e5, 0 -1px 0 0 #e5e5e5;
+    border-top: 1px solid #e5e5e5;
   }
 }
 
@@ -13,7 +17,7 @@
 
 .photo__link {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 }
 
 .photo__image {
@@ -32,7 +36,7 @@
 
 .photo__author {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   text-transform: none;
 }
 
@@ -60,7 +64,8 @@
 
 @media (min-width: $tablet-width) {
   .photo {
-    box-shadow: none;
+    padding: 0;
+    border: none;
   }
 
   .photo__link {
@@ -94,6 +99,10 @@
     &--wide {
       width: 89%;
     }
+  }
+
+  .photo__author {
+    margin-bottom: 6px;
   }
 
   .photo__like {

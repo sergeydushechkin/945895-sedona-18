@@ -1,5 +1,8 @@
 .reason-one__list {
   @include resetlist;
+
+  margin-bottom: 3px;
+
   padding-top: 34px;
   padding-bottom: 7px;
   padding-right: 30px;
@@ -8,7 +11,7 @@
 
 .reason-one__item {
   position: relative;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 
   &::before {
     content: "";
@@ -53,6 +56,7 @@
     justify-content: space-between;
 
     width: 100%;
+    margin-bottom: 0;
     padding: 0;
   }
 
@@ -63,7 +67,7 @@
     width: 33.333%;
 
     padding: 0 45px;
-    padding-top: 157px;
+    padding-top: 159px;
 
     &::before {
       width: 80px;
@@ -109,7 +113,7 @@
 
 @media (min-width: $desktop-width) {
   .reason-one__item {
-    margin-bottom: 49px;
+    margin-bottom: 46px;
   }
 
   .reason-one__header {
