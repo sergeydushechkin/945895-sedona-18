@@ -1,9 +1,5 @@
-.video {
-  margin-bottom: 80px;
-}
-
 .video__header {
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
@@ -11,7 +7,8 @@
 }
 
 .video__description {
-  margin-bottom: 40px;
+  padding: 0 25px;
+  margin-bottom: 35px;
 
   @include fontprop(#333333, 14px, 24px);
   text-align: center;
@@ -39,12 +36,17 @@
   height: 66px;
   margin: 0 auto;
 
+  padding-top: 3px;
+  padding-left: 8px;
+  padding-right: 7px;
+
   text-align: center;
   background-color: #f2f2f2;
 }
 
 .video__playback {
   position: absolute;
+  left: 0;
   bottom: 66px;
   width: 280px;
   height: 45px;
@@ -64,7 +66,7 @@
 .video__position {
   position: absolute;
   top: calc(50% - 4px);
-  left: 30px;
+  left: 16%;
   width: 9px;
   height: 9px;
   padding: 0;
@@ -76,7 +78,7 @@
 }
 
 .video__control {
-  padding: 0 20px;
+  padding: 0 16px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -106,16 +108,36 @@
     padding: 0 60px;
   }
 
+  .video__header {
+    margin-bottom: 31px;
+    font-size: 30px;
+  }
+
+  .video__description {
+    margin-bottom: 73px;
+    padding: 0 110px;
+    letter-spacing: 0.1px;
+  }
+
+  .video__player {
+    width: 648px;
+  }
+
   .video__picture {
     width: 100%;
+    height: 499px;
   }
 
   .video__controls {
-    position: relative;
+    position: absolute;
 
-    bottom: 93px;
+    bottom: -1px;
     width: 100%;
     height: 93px;
+
+    padding-top: 1px;
+    padding-left: 19px;
+    padding-right: 24px;
 
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -129,12 +151,13 @@
   }
 
   .video__line {
-    left: 5%;
-    width: 90%;
+    left: 6%;
+    width: 88%;
   }
 
   .video__position {
-    left: 20%;
+    top: calc(50% - 6px);
+    left: 29%;
   }
 
   .video__control {
@@ -162,5 +185,32 @@
 @media (min-width: $desktop-width) {
   .video {
     padding: 0 200px;
+  }
+
+  .video__description {
+    margin-bottom: 72px;
+    padding: 0 180px;
+  }
+
+  .video__player {
+    width: 800px;
+  }
+
+  .video__controls {
+    bottom: 0;
+    padding-right: 26px;
+  }
+
+  .video__playback {
+    width: 79%;
+  }
+
+  .video__line {
+    left: 4%;
+    width: 92%;
+  }
+
+  .video__position {
+    left: 21%;
   }
 }

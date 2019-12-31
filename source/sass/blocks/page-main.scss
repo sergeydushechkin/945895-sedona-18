@@ -1,5 +1,6 @@
 .page-main__header {
-  margin-bottom: 40px;
+  padding: 0 25px;
+  margin-bottom: 27px;
 
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
@@ -7,7 +8,7 @@
 }
 
 .page-main__reasons {
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
 .reasons__list {
@@ -19,5 +20,29 @@
 }
 
 .page-main__interest {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    margin-bottom: 28px;
+    padding: 0 75px;
+
+    font-size: 21px;
+    letter-spacing: 0.1px;
+  }
+
+  .page-main__reasons {
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    padding: 0 300px;
+  }
+
+  .page-main__reasons {
+    margin-bottom: 56px;
+  }
 }

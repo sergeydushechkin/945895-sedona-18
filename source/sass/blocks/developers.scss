@@ -1,9 +1,19 @@
 .developers {
+  text-align: center;
+  line-height: 10px;
+  word-spacing: 8px;
+}
+
+.developers__text {
   @include fontprop(#000000, 14px, 26px);
+  letter-spacing: 0.3px;
+
   vertical-align: middle;
 }
 
 .developers__link {
+  vertical-align: middle;
+
   &:hover .developers__logo,
   &:focus .developers__logo {
     fill: $light-grey-blue;

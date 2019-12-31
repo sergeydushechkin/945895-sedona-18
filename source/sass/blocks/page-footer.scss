@@ -1,9 +1,10 @@
 .page-footer {
+  margin-bottom: 23px;
   background-color: #fefefe;
 }
 
 .page-footer__hashtag {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
   @include fontprop(#000000, 21px, 26px);
   font-weight: bold;
@@ -25,10 +26,28 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+  }
+
+  .page-footer__hashtag {
+    margin: 0;
+  }
+
+  .page-footer__socials {
+    margin: 0;
   }
 
   .page-footer__developer {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0 120px;
+    padding-bottom: 38px;
   }
 }

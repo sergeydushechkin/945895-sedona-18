@@ -10,6 +10,8 @@
 }
 
 .page-form__header {
+  margin: 0;
+
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
   text-align: center;

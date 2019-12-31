@@ -1,18 +1,18 @@
 .page-container {
-  width: $mobile-width;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-container {
-    width: $tablet-width;
+    max-width: 900px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-container {
-    width: $desktop-width;
+    max-width: 1200px;
     margin: 0 auto;
 
     background-color: #ffffff;
