@@ -164,6 +164,9 @@
   }
 
   .form__header {
+    margin-bottom: 57px;
+
+    font-size: 21px;
     text-align: left;
 
     &--centered {
@@ -173,9 +176,27 @@
     }
   }
 
+  .form__user {
+    padding-left: 58px;
+  }
+
+  .form__user-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .form__contacts,
   .form__sight {
     border-top: 1px solid #e5e5e5;
+  }
+
+  .form__impression-item {
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .form__sight-list {
