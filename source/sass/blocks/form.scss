@@ -1,29 +1,36 @@
 .form__header {
   display: block;
   margin: 0;
+  margin-bottom: 21px;
 
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
   text-align: center;
+
+  &--emotions {
+    margin-bottom: 17px;
+  }
 }
 
 .form__label {
   display: inline-block;
-  padding-right: 10px;
+  margin-right: 15px;
 
   @include fontprop(#333333, 14px, 26px);
 
   &--upper {
-    margin-bottom: 7px;
+    margin-left: 22px;
+    margin-bottom: 5px;
   }
 }
 
 .form__user {
   border: none;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .form__user-list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -31,13 +38,12 @@
 .form__user-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .form__input {
   flex-grow: 1;
   width: 100px;
-  margin-bottom: 20px;
 
   &--email,
   &--telephone {
@@ -75,12 +81,18 @@
 }
 
 .form__contacts {
+  padding-bottom: 15px;
   border: none;
 }
 
 .form__contacts-list {
+  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.form__contacts-item {
+  margin-bottom: 14px;
 }
 
 .form__label-radio,
@@ -100,20 +112,27 @@
 }
 
 .form__impression-item {
-  margin-bottom: 25px;
+  margin-bottom: 43px;
 }
 
 .form__sight {
+  padding-bottom: 16px;
   border: none;
 }
 
 .form__sight-list {
+  margin: 0;
   padding: 0;
+  padding-top: 10px;
   list-style: none;
 }
 
-.form__checkbox {
-  margin-bottom: 45px;
+.form__sight-item {
+  margin-bottom: 54px;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
 }
 
 .form__emotions {
@@ -121,17 +140,21 @@
 }
 
 .form__emotions-text {
-  height: auto;
+  height: 160px;
   width: 100%;
 
-  margin-bottom: 20px;
+  margin-bottom: 48px;
 
   resize: none;
 }
 
 .form__submit {
+  width: 100%;
+
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 51px;
+
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
