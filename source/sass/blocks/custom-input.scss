@@ -33,3 +33,9 @@ $input-active: #ffffff;
     color: #333333;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .custom-input--textarea {
+    padding: 12px 18px;
+  }
+}

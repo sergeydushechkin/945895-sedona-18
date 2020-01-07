@@ -71,11 +71,16 @@
   }
 }
 
-
 /* -------------Десктопная версия------------- */
 @media (min-width: $desktop-width) {
   .page-form {
     padding: 0 120px;
+  }
+
+  .page-form__wrapper {
+    &--half {
+      margin-bottom: 67px;
+    }
   }
 
   .page-form__description {

@@ -1,11 +1,15 @@
 .form__header {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 21px;
 
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
   text-align: center;
+
+  &--impression {
+    margin-bottom: 37px;
+  }
 
   &--emotions {
     margin-bottom: 17px;
@@ -62,7 +66,7 @@
 .form__email::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 1px;
   right: 0;
   width: 58px;
   height: 58px;
@@ -107,6 +111,7 @@
 }
 
 .form__impression-list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -136,6 +141,7 @@
 }
 
 .form__emotions {
+  font-size: 0;
   border: none;
 }
 
@@ -143,7 +149,7 @@
   height: 160px;
   width: 100%;
 
-  margin-bottom: 48px;
+  margin-bottom: 51px;
 
   resize: none;
 }
@@ -157,6 +163,10 @@
   text-transform: uppercase;
 }
 
+.form__warning {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     display: flex;
@@ -164,12 +174,14 @@
   }
 
   .form__header {
+    margin: 0;
     margin-bottom: 57px;
 
     font-size: 21px;
     text-align: left;
 
     &--centered {
+      margin: 0 auto;
       margin-bottom: 25px;
 
       text-align: center;
@@ -179,10 +191,13 @@
       padding: 0 61px;
     }
 
+    &--impression {
+      margin-bottom: 73px;
+    }
+
     &--sight {
-      margin: 0 125px;
+      width: 62%;
       margin-bottom: 56px;
-      padding: 0 63px;
     }
 
     &--emotions {
@@ -229,7 +244,7 @@
     flex-wrap: wrap;
 
     padding: 0 100px;
-    padding-right: 33px;
+    padding-right: 31px;
   }
 
   .form__sight-item {
@@ -242,7 +257,13 @@
   }
 
   .form__emotions-text {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
+  }
+
+  .form__submit-wrapper {
+    display: flex;
+
+    @include fontprop(#333333, 14px, 34px);
   }
 
   .form__submit {
@@ -250,13 +271,48 @@
 
     padding-left: 65px;
     margin: 0;
+    margin-right: auto;
     margin-bottom: 51px;
 
     text-align: left;
   }
+
+  .form__warning {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .form__header {
+    &--centered {
+      margin-bottom: 74px;
+    }
+
+    &--impression {
+      padding-left: 75px;
+    }
+
+    &--sight {
+      width: 42%;
+      margin-bottom: 56px;
+    }
+
+    &--emotions {
+      margin-bottom: 57px;
+    }
+  }
+
+  .form__label {
+    &--upper {
+      margin: 0;
+      margin-right: 12px;
+    }
+  }
+
+  .form__user {
+    padding-left: 80px;
+  }
+
   .form__contacts-list {
     display: flex;
     justify-content: space-between;
@@ -266,8 +322,20 @@
     width: auto;
   }
 
+  .form__desktop-word {
+    display: none;
+  }
+
+  .form__impression {
+    padding-left: 4px;
+  }
+
+  .form__sight {
+    margin-bottom: 4px;
+  }
+
   .form__sight-list {
-    padding: 0;
+    padding: 0 5px;
   }
 
   .form__sight-item {
@@ -277,6 +345,18 @@
   .form__telephone,
   .form__email {
     display: inline-block;
-    width: 240px;
+    width: 315px;
+  }
+
+  .form__submit {
+    width: 50%;
+
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 56px;
+    padding-left: 0;
+    padding-right: 0;
+
+    text-align: center;
   }
 }
