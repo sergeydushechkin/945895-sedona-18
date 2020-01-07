@@ -63,3 +63,17 @@ $checkbox-active: #d5d5d5;
     border-color: $checkbox-hover;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .custom-checkbox__label {
+    padding-left: 57px;
+
+    &::before {
+      left: -22px;
+    }
+  }
+
+  .custom-checkbox__control:checked + .custom-checkbox__label::after {
+    left: -22px;
+  }
+}

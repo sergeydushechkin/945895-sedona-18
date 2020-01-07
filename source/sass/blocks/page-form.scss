@@ -46,11 +46,11 @@
 
     &--half {
       width: 50%;
+      margin-bottom: 70px;
     }
 
     &--first {
       order: -1;
-      margin-bottom: 10px;
     }
 
     &:first-child {
@@ -76,5 +76,10 @@
 @media (min-width: $desktop-width) {
   .page-form {
     padding: 0 120px;
+  }
+
+  .page-form__description {
+    margin-bottom: 59px;
+    padding: 0 255px;
   }
 }
