@@ -172,6 +172,8 @@
   .reasons__image-wrapper {
     flex-grow: 1;
     height: 256px;
+
+    overflow: hidden;
   }
 
   .reasons__image {
