@@ -89,7 +89,8 @@
   background-position: 49.8% 100%, 50% 50%;
   background-size: cover, cover;
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     background-image:
       url("../../img/bg-intro-triangle-mobile.svg"),
       url("../../img/bg-back-mobile@2x.jpg");
@@ -149,7 +150,8 @@
     background-position: 50% 100%, 50% 50%;
     background-size: 100%, cover;
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
       background-image:
         url("../../img/bg-intro-triangle-tablet.svg"),
         url("../../img/bg-back-tablet@2x.jpg");
@@ -201,7 +203,8 @@
     background-repeat: no-repeat, no-repeat;
     background-position: 50% 100%, 50% 50%;
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
       background-image:
         url("../../img/bg-intro-triangle-desktop.svg"),
         url("../../img/bg-back-desktop@2x.jpg");
