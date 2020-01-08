@@ -25,8 +25,12 @@
             </li>
           </ul>
           <div class="page-header__pane">
-            <a class="page-header__logo" href="">
-              <img src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
+            <a class="page-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+                <img class="page-header__icon" src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
+              <picture>
             </a>
             <button class="page-header__toggle page-header__toggle--open">
               <span class="visually-hidden">Переключение меню</span>

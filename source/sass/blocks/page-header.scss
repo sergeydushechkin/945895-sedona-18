@@ -171,6 +171,15 @@
     width: 200px;
   }
 
+  .page-header__logo {
+    left: calc(50% - 95px);
+  }
+
+  .page-header__icon {
+    width: 188px;
+    height: auto;
+  }
+
   .page-header__label {
     width: $desktop-width;
     height: 518px;
