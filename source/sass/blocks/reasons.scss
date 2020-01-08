@@ -169,9 +169,14 @@
     letter-spacing: 0.1px;
   }
 
-  .reasons__image {
+  .reasons__image-wrapper {
     flex-grow: 1;
     height: 256px;
+  }
+
+  .reasons__image {
+    width: 100%;
+    height: auto;
   }
 }
 
