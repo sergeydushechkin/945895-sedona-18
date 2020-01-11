@@ -204,4 +204,14 @@
   .reasons__wrap {
     display: block;
   }
+
+  .reasons__image {
+    &--city {
+      margin-top: -71px;
+    }
+
+    &--bridge {
+      margin-top: -75px;
+    }
+  }
 }
