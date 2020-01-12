@@ -80,9 +80,12 @@
 .video__control {
   padding: 0 16px;
   border: none;
+
   background-color: transparent;
   cursor: pointer;
   fill: #5c6870;
+
+  outline: none;
 
   &:hover .video__icon,
   &:focus .video__icon {
@@ -90,8 +93,7 @@
   }
 
   &:active .video__icon {
-    fill: #333333;
-    opacity: 0.3;
+    fill: rgba(51, 51, 51, 0.3);
   }
 
   &--repeat {
@@ -167,13 +169,11 @@
 
     &:hover .video__icon,
     &:focus .video__icon {
-      fill: #ffffff;
-      opacity: 0.6;
+      fill: rgba(255, 255, 255, 0.6);
     }
 
     &:active .video__icon {
-      fill: #ffffff;
-      opacity: 0.3;
+      fill: rgba(255, 255, 255, 0.3);
     }
 
     &--repeat {
