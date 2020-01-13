@@ -4,8 +4,8 @@ $input-active: #ffffff;
 
 .custom-input {
   height: 58px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 18px;
+  padding-right: 18px;
 
   @include fontprop(#333333, 18px, 26px);
   font-weight: bold;
@@ -14,6 +14,10 @@ $input-active: #ffffff;
   border: solid 4px $input-default;
   background-color: $input-default;
   outline: none;
+
+  &--textarea {
+    padding: 12px 15px;
+  }
 
   &:hover {
     background-color: $input-hover;
@@ -27,5 +31,11 @@ $input-active: #ffffff;
 
   &::placeholder {
     color: #333333;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-input--textarea {
+    padding: 12px 18px;
   }
 }

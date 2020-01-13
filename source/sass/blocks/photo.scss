@@ -69,16 +69,24 @@
   }
 
   .photo__link {
+    height: 267px;
+    width: 100%;
+
     margin-bottom: 0;
     line-height: 0;
+    overflow: hidden;
+
+    &--wide {
+      height: 400px;
+    }
   }
 
   .photo__image {
     width: 100%;
-    height: 267px;
+    height: auto;
 
     &--large {
-      height: 400px;
+      height: auto;
     }
   }
 
@@ -147,5 +155,9 @@
 
   .photo__like {
     color: #ffffff;
+  }
+
+  .photo__like-button {
+    background-image: url("../../img/icon-like-desktop.svg");
   }
 }

@@ -9,10 +9,10 @@ $radio-active: #d5d5d5;
 .custom-radio__control:checked + .custom-radio__label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 16px;
-  height: 16px;
+  top: 3px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
 
   background-color: #333333;
   border-radius: 50%;
@@ -37,15 +37,15 @@ $radio-active: #d5d5d5;
 
 .custom-radio__label {
   position: relative;
-  padding-left: 40px;
+  padding-left: 61px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 46px;
-    height: 46px;
+    top: -15px;
+    left: -17px;
+    width: 56px;
+    height: 56px;
 
     background-color: $radio-default;
     border-radius: 50%;
@@ -54,5 +54,11 @@ $radio-active: #d5d5d5;
   &:hover::before,
   &:focus::before {
     background-color: $radio-hover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .custom-radio__label {
+    padding-left: 58px;
   }
 }

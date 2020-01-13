@@ -10,10 +10,10 @@ $checkbox-active: #d5d5d5;
 .custom-checkbox__control:checked + .custom-checkbox__label::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 46px;
-  height: 46px;
+  top: -15px;
+  left: -17px;
+  width: 56px;
+  height: 56px;
 
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
@@ -41,16 +41,16 @@ $checkbox-active: #d5d5d5;
 
 .custom-checkbox__label {
   position: relative;
-  padding-left: 50px;
+  padding-left: 61px;
 
   &::before {
     content: "";
     position: absolute;
     display: inline-block;
-    top: -10px;
-    left: -10px;
-    width: 46px;
-    height: 46px;
+    top: -15px;
+    left: -18px;
+    width: 56px;
+    height: 56px;
 
     background-color: $checkbox-default;
     border: solid 5px $checkbox-default;
@@ -61,5 +61,19 @@ $checkbox-active: #d5d5d5;
   &:focus::before {
     background-color: $checkbox-hover;
     border-color: $checkbox-hover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .custom-checkbox__label {
+    padding-left: 57px;
+
+    &::before {
+      left: -22px;
+    }
+  }
+
+  .custom-checkbox__control:checked + .custom-checkbox__label::after {
+    left: -22px;
   }
 }

@@ -25,8 +25,12 @@
             </li>
           </ul>
           <div class="page-header__pane">
-            <a class="page-header__logo" href="">
-              <img src="./img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
+            <a class="page-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__icon" src="img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
+              <picture>
             </a>
             <button class="page-header__toggle page-header__toggle--open">
               <span class="visually-hidden">Переключение меню</span>
@@ -34,15 +38,13 @@
           </div>
         </nav>
         <div class="page-header__label page-header__label--alternate">
-          <img class="page-header__image page-header__image--compact" src="./img/text-sedona.svg" alt="Изображение города Седона" width="229" height="39">
+          <img class="page-header__image page-header__image--compact" src="img/text-sedona.svg" alt="Изображение города Седона" width="229" height="39">
         </div>
       </header>
 
       <main class="page-form">
-        <div class="page-form__wrapper">
-          <h1 class="page-form__header">Оставьте свой отзыв</h1>
-          <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </div>
+        <h1 class="page-form__header">Оставьте свой отзыв</h1>
+        <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
         <section class="page-form__content">
             <h2 class="visually-hidden">Форма для отправки отзыва</h2>
@@ -70,12 +72,12 @@
 
               <div class="page-form__wrapper">
                 <fieldset class="form__contacts">
-                  <legend class="form__header form__header--centered">Контактная информация:</legend>
+                  <legend class="form__header form__header--centered form__header--contacts">Контактная информация:</legend>
                   <ul class="form__contacts-list">
                     <li class="form__contacts-item">
-                      <label class="form__label form__label--upper" for="id__user-telephone">Контактный телефон*:</label>
+                      <label class="form__label form__label--upper" for="id__user-telephone"><span class="form__desktop-word">Контактный </span>телефон*:</label>
                       <span class="form__telephone">
-                        <input class="form__input form__input--telephone custom-input" type="tel" name="telephone" id="id__user-telephone" placeholder="Введите телефон" required>
+                        <input class="form__input form__input--telephone custom-input" type="tel" name="telephone" id="id__user-telephone" placeholder="Введите телефон" pattern="^[0-9-+\s()]*$" required>
                       </span>
                     </li>
                     <li class="form__contacts-item">
@@ -90,7 +92,7 @@
 
               <div class="page-form__wrapper page-form__wrapper--half page-form__wrapper--first">
                 <fieldset class="form__impression">
-                  <legend class="form__header">Ваше общее впечатление:</legend>
+                  <legend class="form__header form__header--impression">Ваше общее впечатление:</legend>
                   <ul class="form__impression-list">
                     <li class="form__impression-item custom-radio">
                       <input class="form__radio custom-radio__control" type="radio" name="impression" value="positive" id="id__user-positive" checked>
@@ -110,11 +112,11 @@
 
               <div class="page-form__wrapper">
                 <fieldset class="form__sight">
-                  <legend class="form__header form__header--centered">Посещенные достопримечательности:</legend>
+                  <legend class="form__header form__header--centered form__header--sight">Посещенные достопримечательности:</legend>
                   <ul class="form__sight-list">
                     <li class="form__sight-item custom-checkbox">
                       <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="bridge" id="id__sight-bridge" checked>
-                      <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-bridge">Мост дьявола</label>
+                      <label  class="form__label-checkbox custom-checkbox__label" for="id__sight-bridge">Мост Дьявола</label>
                     </li>
                     <li class="form__sight-item custom-checkbox">
                       <input class="form__checkbox custom-checkbox__control" type="checkbox" name="sight" value="mountain" id="id__sight-mountain" checked>
@@ -135,9 +137,12 @@
               <div class="page-form__wrapper page-form__wrapper--noborder">
                 <fieldset class="form__emotions">
                   <legend class="visually-hidden form__header--centered">Эмоции</legend>
-                  <label class="form__header form__header--centered" for="id__emotions">Опишите свои эмоции:</label>
-                  <textarea class="form__emotions-text custom-input" id="id__emotions" name="emotions" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-                  <button class="form__submit button" type="submit">Отправить отзыв</button>
+                  <label class="form__header form__header--centered form__header--emotions" for="id__emotions">Опишите свои эмоции:</label>
+                  <textarea class="form__emotions-text custom-input custom-input--textarea" id="id__emotions" name="emotions" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+                  <div class="form__submit-wrapper">
+                    <button class="form__submit button" type="submit">Отправить отзыв</button>
+                    <p class="form__warning">* — Обязательные поля</p>
+                  </div>
                 </fieldset>
               </div>
             </form>
@@ -166,7 +171,7 @@
         <p class="page-footer__developer developers">
           <span class="developers__text">Разработано</span>
           <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <svg class="developers__logo-container" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path class="developers__logo" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>
           </a>
@@ -175,5 +180,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

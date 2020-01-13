@@ -1,25 +1,34 @@
 .page-form__wrapper {
   padding: 0 20px;
-  padding-top: 25px;
+  padding-top: 18px;
 
   border-bottom: 1px solid #e5e5e5;
 
   &--noborder {
     border-bottom: none;
   }
+
+  &:first-child {
+    border-top: 1px solid #e5e5e5;
+  }
 }
 
 .page-form__header {
-  margin: 0;
+  margin-bottom: 27px;
 
   @include fontprop(#000000, 18px, 26px);
   font-weight: bold;
   text-align: center;
+  letter-spacing: 0.4px;
 }
 
 .page-form__description {
+  margin: 0;
+  margin-bottom: 17px;
+
   @include fontprop(#333333, 14px, 24px);
   text-align: center;
+  letter-spacing: 0.1px;
 }
 
 
@@ -30,24 +39,52 @@
   }
 
   .page-form__wrapper {
-    padding: 0;
-    border: none;
     width: 100%;
+    padding: 0;
+
+    border: none;
 
     &--half {
       width: 50%;
+      margin-bottom: 70px;
     }
 
     &--first {
       order: -1;
     }
+
+    &:first-child {
+      border: none;
+      border-left: 1px solid #e5e5e5;
+    }
+  }
+
+  .page-form__header {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .page-form__description {
+    margin-bottom: 74px;
+    padding: 0 100px;
   }
 }
-
 
 /* -------------Десктопная версия------------- */
 @media (min-width: $desktop-width) {
   .page-form {
     padding: 0 120px;
+  }
+
+  .page-form__wrapper {
+    &--half {
+      margin-bottom: 67px;
+    }
+  }
+
+  .page-form__description {
+    margin-bottom: 59px;
+    padding: 0 255px;
   }
 }
