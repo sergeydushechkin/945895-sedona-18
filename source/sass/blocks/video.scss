@@ -167,15 +167,6 @@
       fill: #ffffff;
     }
 
-    &:hover .video__icon,
-    &:focus .video__icon {
-      fill: rgba(255, 255, 255, 0.6);
-    }
-
-    &:active .video__icon {
-      fill: rgba(255, 255, 255, 0.3);
-    }
-
     &--repeat {
       margin-right: 0;
     }
