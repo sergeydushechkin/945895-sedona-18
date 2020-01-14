@@ -53,6 +53,10 @@
   .menu-nav__list {
     flex-direction: row;
     justify-content: space-between;
+
+    &--close {
+      display: flex;
+    }
   }
 
   .menu-nav__item {
