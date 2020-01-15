@@ -54,6 +54,10 @@
     width: 100%;
     padding-right: 80px;
   }
+
+  &--red {
+    border-color: #ff0000;
+  }
 }
 
 .form__telephone,
@@ -66,7 +70,7 @@
 .form__email::before {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 0;
   right: 0;
   width: 58px;
   height: 58px;
@@ -77,11 +81,11 @@
 }
 
 .form__telephone::before {
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
 }
 
 .form__email::before {
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
 }
 
 .form__contacts {

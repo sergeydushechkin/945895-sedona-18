@@ -27,21 +27,21 @@
   &--housing::before {
     top: -8px;
     left: -48px;
-    background-image: url("../../img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
     background-size: 37%;
   }
 
   &--souvenirs::before {
     top: -11px;
     left: -45px;
-    background-image: url("../../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-size: 32%;
   }
 
   &--food::before {
     top: -5px;
     left: -51px;
-    background-image: url("../../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
     background-size: 38%;
   }
 }

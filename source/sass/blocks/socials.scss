@@ -38,17 +38,17 @@
   }
 
   &--twitter::before {
-    background-image: url("./../../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
 
   &--facebook::before {
     top: 14px;
     left: 5px;
-    background-image: url("./../../img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
   }
 
   &--youtube::before {
-    background-image: url("./../../img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
   }
 
   &:hover,
