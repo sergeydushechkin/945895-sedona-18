@@ -39,7 +39,11 @@ gulp.task("html", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src([
+    "source/img/icon-video-fullscreen.svg",
+    "source/img/icon-video-replay.svg",
+    "source/img/icon-video-subtitles.svg"
+  ])
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
