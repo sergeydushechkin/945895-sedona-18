@@ -130,9 +130,20 @@
           <p class="interest__description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
           <a class="interest__button button" href="">Найти гостиницу</a>
 
-          <iframe class="interest__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1672890.7030045255!2d-112.9241551902802!3d35.00776948267189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1573676279130!5m2!1sru!2sru"
-            width="320" height="350" allowfullscreen="" title="Расположение города Седона картах">
-          </iframe>
+          <div class="interest__map-wrapper">
+            <iframe class="interest__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1672890.7030045255!2d-112.9241551902802!3d35.00776948267189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1573676279130!5m2!1sru!2sru"
+              width="320" height="350" allowfullscreen="" title="Расположение города Седона картах">
+            </iframe>
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img class="interest__map-image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Расположение города Седона" width="320" height="350">
+            </picture>
+          </div>
         </section>
 
       </main>
