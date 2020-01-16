@@ -17,7 +17,25 @@
 
 .photo__link {
   display: block;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 15px;
+
+  &--sunset {
+    background-color: #ffda8f;
+  }
+
+  &--cactus {
+    background-color: #887571;
+  }
+
+  &--roads {
+    background-color: #2d3b23;
+  }
+
+  &--bridge {
+    background-color: #e1ae99;
+  }
 }
 
 .photo__image {
