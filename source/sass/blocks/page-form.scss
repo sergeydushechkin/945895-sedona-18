@@ -31,21 +31,6 @@
   letter-spacing: 0.1px;
 }
 
-.page-form__popup {
-  position: fixed;
-  display: none;
-
-  &--success {
-    top: calc(50% - 162px);
-    left: calc(50% - 160px);
-  }
-
-  &--fail {
-    top: calc(50% - 140px);
-    left: calc(50% - 160px);
-  }
-}
-
 /* -------------Планшетная версия------------- */
 @media (min-width: $tablet-width) {
   .page-form {
@@ -83,18 +68,6 @@
     margin-bottom: 74px;
     padding: 0 100px;
   }
-
-  .page-form__popup {
-    top: calc(50% - 174px);
-
-    &--success {
-      left: calc(50% - 320px);
-    }
-
-    &--fail {
-      left: calc(50% - 200px);
-    }
-  }
 }
 
 /* -------------Десктопная версия------------- */
@@ -113,8 +86,4 @@
     margin-bottom: 59px;
     padding: 0 255px;
   }
-}
-
-.page-form__popup--show {
-  display: block;
 }
