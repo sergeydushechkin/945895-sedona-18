@@ -7,6 +7,8 @@
   padding-bottom: 7px;
   padding-right: 30px;
   padding-left: 70px;
+
+  background-color: #ffffff;
 }
 
 .reason-one__item {
@@ -47,7 +49,16 @@
 }
 
 .reason-one__header {
+  margin: 0;
   margin-bottom: 15px;
+
+  @include fontprop(#000000, 18px, 26px);
+  font-weight: bold;
+}
+
+.reason-one__description {
+  @include fontprop(#333333, 14px, 21px);
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
