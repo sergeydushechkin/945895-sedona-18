@@ -1,4 +1,6 @@
 .popup {
+  position: fixed;
+  display: none;
   width: 320px;
 
   padding-top: 29px;
@@ -6,7 +8,14 @@
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
+  &--success {
+    top: calc(50% - 162px);
+    left: calc(50% - 160px);
+  }
+
   &--fail {
+    top: calc(50% - 140px);
+    left: calc(50% - 160px);
     padding-top: 26px;
   }
 }
@@ -55,11 +64,17 @@
 
 @media (min-width: $tablet-width) {
   .popup {
+    top: calc(50% - 174px);
     width: 640px;
 
     padding-top: 30px;
 
+    &--success {
+      left: calc(50% - 320px);
+    }
+
     &--fail {
+      left: calc(50% - 200px);
       width: 400px;
     }
   }
@@ -94,4 +109,8 @@
       padding: 16px 122px;
     }
   }
+}
+
+.popup--show {
+  display: block;
 }

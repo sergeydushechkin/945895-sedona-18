@@ -21,13 +21,35 @@
   margin-bottom: 50px;
 }
 
-.interest__map {
-  display: block;
+.interest__map-wrapper {
+  position: relative;
+  height: 350px;
   margin: 0 auto;
+
+  background-color: #f3f1ed;
+}
+
+.interest__map {
+  position: relative;
+  display: block;
+
   width: 100%;
   height: 350px;
 
+  z-index: 2;
   border: none;
+}
+
+.interest__map-image {
+  position: absolute;
+
+  top: 0;
+  left: calc(50% - 160px);
+
+  width: 320px;
+  height: 350px;
+
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +67,11 @@
     width: 60%;
     margin-bottom: 58px;
   }
+
+  .interest__map-image {
+    left: calc(50% - 384px);
+    width: 768px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -56,5 +83,10 @@
   .interest__button {
     width: 38%;
     margin-bottom: 66px;
+  }
+
+  .interest__map-image {
+    left: calc(50% - 600px);
+    width: 1200px;
   }
 }

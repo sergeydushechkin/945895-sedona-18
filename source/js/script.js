@@ -19,14 +19,14 @@ mobileToggle.addEventListener("click", function(evt) {
 });
 
 // Показ попапов
-if (document.querySelector(".page-form__popup")) {
-  var popupSuccess = document.querySelector(".page-form__popup--success");
-  var popupFail = document.querySelector(".page-form__popup--fail");
+if (document.querySelector(".popup")) {
+  var popupSuccess = document.querySelector(".popup--success");
+  var popupFail = document.querySelector(".popup--fail");
 
   var closeSuccess = document.querySelector(".popup__close-button--success");
   var closeFail = document.querySelector(".popup__close-button--fail");
 
-  var form = document.querySelector(".page-form__form")
+  var form = document.querySelector(".form")
   var formUsername = document.querySelector("#id__user-name");
   var formSurname = document.querySelector("#id__user-surname");
   var formPatronymic = document.querySelector("#id__user-patronymic");
@@ -44,38 +44,38 @@ if (document.querySelector(".page-form__popup")) {
         if (!formTelephone.value) formTelephone.classList.add("form__input--red");
         if (!formEmail.value) formEmail.classList.add("form__input--red");
 
-        popupFail.classList.remove("page-form__popup--show");
+        popupFail.classList.remove("popup--show");
         popupFail.offsetWidth = popupFail.offsetWidth;
-        popupFail.classList.add("page-form__popup--show");
+        popupFail.classList.add("popup--show");
     } else {
-        popupSuccess.classList.remove("page-form__popup--show");
+        popupSuccess.classList.remove("popup--show");
         popupSuccess.offsetWidth = popupSuccess.offsetWidth;
-        popupSuccess.classList.add("page-form__popup--show");
+        popupSuccess.classList.add("popup--show");
     }
   });
 
   closeSuccess.addEventListener("click", function(event) {
     event.preventDefault();
-    if (popupSuccess.classList.contains("page-form__popup--show")) {
-      popupSuccess.classList.remove("page-form__popup--show");
+    if (popupSuccess.classList.contains("popup--show")) {
+      popupSuccess.classList.remove("popup--show");
     }
   });
 
   closeFail.addEventListener("click", function(event) {
     event.preventDefault();
-    if (popupFail.classList.contains("page-form__popup--show")) {
-      popupFail.classList.remove("page-form__popup--show");
+    if (popupFail.classList.contains("popup--show")) {
+      popupFail.classList.remove("popup--show");
     }
   });
 
   window.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
       event.preventDefault();
-      if (popupSuccess.classList.contains("page-form__popup--show")) {
-        popupSuccess.classList.remove("page-form__popup--show");
+      if (popupSuccess.classList.contains("popup--show")) {
+        popupSuccess.classList.remove("popup--show");
       }
-      if (popupFail.classList.contains("page-form__popup--show")) {
-        popupFail.classList.remove("page-form__popup--show");
+      if (popupFail.classList.contains("popup--show")) {
+        popupFail.classList.remove("popup--show");
       }
     }
   });

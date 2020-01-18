@@ -71,6 +71,10 @@
   }
 }
 
+.reasons__break {
+  display: none;
+}
+
 .reasons__description {
   @include fontprop(#ffffff, 14px, 21px);
   margin: 0;
@@ -86,20 +90,8 @@
   }
 }
 
-.reason-one__list {
-  list-style: none;
-  background-color: #ffffff;
-}
-
-.reason-one__header {
-  @include fontprop(#000000, 18px, 26px);
-  margin: 0;
-  font-weight: bold;
-}
-
-.reason-one__description {
-  @include fontprop(#333333, 14px, 21px);
-  margin: 0;
+.reasons__image-wrapper {
+  background-color: #c8c7cd;
 }
 
 .reasons__image {
@@ -141,7 +133,7 @@
     }
 
     &--near {
-      width: 33.333%;
+      width: 33.33333%;
     }
 
     &--second {
@@ -201,8 +193,8 @@
     margin-bottom: 20px;
   }
 
-  .reasons__wrap {
-    display: block;
+  .reasons__break {
+    display: inline;
   }
 
   .reasons__image {
